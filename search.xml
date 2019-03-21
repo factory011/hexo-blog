@@ -1,8 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F03%2F20%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[css06]]></title>
+    <url>%2F2019%2F03%2F21%2Fcss06%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[css05]]></title>
+    <url>%2F2019%2F03%2F21%2Fcss05%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[css04]]></title>
+    <url>%2F2019%2F03%2F21%2Fcss04%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[css03]]></title>
+    <url>%2F2019%2F03%2F21%2Fcss03%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[css02]]></title>
+    <url>%2F2019%2F03%2F21%2Fcss02%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[css01]]></title>
+    <url>%2F2019%2F03%2F21%2Fcss01%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[html03]]></title>
+    <url>%2F2019%2F03%2F21%2Fhtml03%2F</url>
+    <content type="text"><![CDATA[表单系列标签没有语义的布局标签HTML5新标签与属性]]></content>
+      <categories>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[html02]]></title>
+    <url>%2F2019%2F03%2F21%2Fhtml02%2F</url>
+    <content type="text"><![CDATA[链接标签a标签（Anchor）：超链接（锚） 作用：跳转或定位（超链接、锚链接、a链接、a标签） 特点：没访问过显示蓝色，访问过显示紫色（清空缓存恢复成蓝色） a标签的跳转功能 作用：可以从一个页面跳转到另一个页面 格式：&lt;a href=&quot;跳转目标&quot; target=&quot;窗口弹出方式&quot;&gt;文本或图像&lt;/a&gt; 注意：a标签不能相互嵌套 a标签常用属性 href：跳转的目标地址 herf=&quot;#&quot; 页面不会跳转，会回到页面顶部 herf=&quot;&quot; 会刷新页面 下载：写的文件是浏览器不能打开的路径，浏览器会默认下载（.zip） target：指定链接页面的打开方式 _self 当前页面跳转（默认） _blank 打开新的窗口跳转 注意：可以为页面上所有的a标签统一设置跳转方式 a标签的定位功能（锚链接） 当前页面定位 123&gt; &lt;p id="mao"&gt;cat&lt;/p&gt;&gt; &lt;a href="#mao"&gt;jump cat&lt;/a&gt;&gt; 跨新页面定位 12目标页面test.html的代码&lt;p id="mao"&gt;cat&lt;/p&gt;&lt;a href="test.html#mao"&gt;jump cat&lt;/a&gt; html结构分析 DOCTYPE（文档类型） html（根标签） lang（en 英文、zh 中文） charset=”UTF-8” UTF-8 所有的国家通用 GBK 中文包括港澳台 GB2312 中文（大陆） 注意：（乱码问题）utf-8表示一个汉字，需要3个字符；GBK表示一个汉字，需要2个字符。 提示网站排名（seo搜索引擎优化） 花钱买排名 优点：见效快，效果好 缺点：烧钱 页面制作成静态页面，后缀名.html 发外链（小广告） 开发规范 标签语义化，在合适的地方使用合适的标签 列表 无序列表（ul li） 有序列表（ol li） 自定义列表（dl dt dd） 无序+标题 一般用于网站底部 表格（table）12345678910111213141516171819&lt;table border="1" cellspacing="0" bgcolor="#CCCC00" width="1000px"&gt; &lt;caption&gt;分数表&lt;/caption&gt; &lt;tr&gt; &lt;th&gt;姓名&lt;/th&gt; &lt;th&gt;分数&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;张三&lt;/td&gt; &lt;td&gt;100&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;李四&lt;/td&gt; &lt;td&gt;99&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;王二麻子&lt;/td&gt; &lt;td&gt;100&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; pre标签 作用：可以将文本中的空格、换行原样保留]]></content>
+      <categories>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[html01]]></title>
+    <url>%2F2019%2F03%2F21%2Fhtml01%2F</url>
+    <content type="text"><![CDATA[Html基础01 常用的五大浏览器 WEB三大组成部分 HTML的基本结构 常见的单标签 常见双标签 相对路径的三种形式 五大浏览器 IE（Edge）浏览器 内核：Trident Firefox（火狐）浏览器 内核：Gecko Chrome（谷歌）浏览器 内核：blink（升级版的webkit） 优点：访问速度快、用户体验好、开发调试功能齐全 Safari浏览器 内核：webkit Opera（欧朋）浏览器 内核：blink（早期是presto） 内核 作用：将网页代码解析（转换）并渲染（显示）成用户眼中的界面 Web标准 结构标准：HTML（页面骨架） 表现标准：CSS（页面样式） 行为标准：JS（页面动态效果） HTML基本知识概念HTML（英文Hyper Text Markup Language的缩写）中文译为“超文本标记语言”，主要是通过HTML标签对网页中的文本、图片、声音等内容进行描述。（用HTML标签表示需要显示的效果） 骨架结构12345678&lt;html&gt; &lt;head&gt; &lt;title&gt;页面的标题&lt;/title&gt; &lt;/head&gt; &lt;body&gt; 写自己的代码 &lt;/body&gt;&lt;/html&gt; 标签关系 嵌套关系（父子关系） 1234&gt; &lt;head&gt; &gt; &lt;title&gt;&lt;/title&gt; &gt; &lt;/head&gt;&gt; 并列关系（兄弟关系） 123&gt; &lt;head&gt;&lt;/head&gt;&gt; &lt;body&gt;&lt;/body&gt;&gt; 单标签语法：标签名 例：&lt;br&gt; &lt;hr&gt; …… hr 标签（Horizontal Rule）：水平线标签 作用：在页面上显示一条横线 格式：&lt;hr&gt; br 标签（break row）：换行标签 作用：强制换行 格式：&lt;br&gt; img 标签（image）：图片标签 作用：在页面中显示一张图片 格式：&lt;img src=&quot;图像URL&quot; /&gt; 属性： src：图片的路径（必填） alt：替换文本（图片加载不出来显示） title：图片的标题（鼠标悬停在图片上显示） width：图片宽度 height：图片高度 注意：一般width或者height只会设置一个，同时设置会使图片拉伸变形 双标签语法：&lt;开始标签&gt; 标签内容 &lt;/结束标签&gt; 例：&lt;strong&gt;我要变粗&lt;/strong&gt; &lt;head&gt;&lt;/head&gt; ……. h 系列标签（Header）：标题标签 作用：给页面上的文字加上标题的语义 格式：&lt;h1&gt;&lt;/h1&gt;…&lt;h6&gt;&lt;/h6&gt; 特点：文字都有变大、加粗，但是从h1~h6文字逐渐减小，独占一行 注意：一般网页中h1标签不能乱用，一般只会用在新闻标题或者网页的logo上（对seo搜索引擎优化很关键） p 标签（Paragraph）：段落标签 作用：给页面上的一段文字加上段落语义 格式：&lt;p&gt;这是段落&lt;/p&gt; 特点：段落与段落之间有间隙、独占一行 文本格式化标签（4组）无语义 b: 加粗 i: 倾斜 s: 删除线 u: 下划线 注意：建议不要使用，因为这些标签没有语义 有语义 strong: 加粗 em: 倾斜 del: 删除线 ins: 下划线 定义：语义就是标签的含义 作用：起强调加强语气作用 路径绝对路径 格式：个人电脑中，带盘符的路径：D:\Program Files (x86)\blog\01.jpg 特点：用的较少，可移植性差 相对路径 同级目录-》直接写目标文件的名称 下级目录-》 写目标文件所在文件夹的名字 进入文件夹/ 直接写目标文件的名字 上级目录-》 去上一级目录../ 直接写目标文件的名字]]></content>
+      <categories>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[margin]]></title>
+    <url>%2F2019%2F03%2F21%2Fmargin%2F</url>
+    <content type="text"><![CDATA[margin的垂直合并现象水平布局的盒子：设置了左右的margin，margin值会叠加（正常情况），最终两个盒子之间的距离，就是两个margin值的和。 垂直布局的盒子：设置了上下的margin，margin值会合并（特殊合并现象），最终两个盒子之间的距离，就是两个margin中的最大值。 解决方法：避免即可（一般垂直方向，只给一个盒子设置mrgin值即可）。 margin的塌陷现象两个互相嵌套的块级盒子，此时如果给子盒子设置margin-top，父盒子会跟着一起掉下来。 解决方法： 1、给父元素设置border-top； 2、给父盒子设置padding-top； 3、设置overflow: hidden; 4、给父元素设置float: left; 5、给父元素设置display: inline-block;]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>margin</tag>
+      </tags>
   </entry>
 </search>

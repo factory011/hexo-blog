@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>浪里个小胖子</title>
   
-  
+  <subtitle>Hello World</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-20T08:20:09.403Z</updated>
+  <updated>2019-03-21T08:38:33.697Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,95 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/03/20/hello-world/"/>
-    <id>http://yoursite.com/2019/03/20/hello-world/</id>
-    <published>2019-03-20T08:20:09.402Z</published>
-    <updated>2019-03-20T08:20:09.403Z</updated>
+    <title>css06</title>
+    <link href="http://yoursite.com/2019/03/21/css06/"/>
+    <id>http://yoursite.com/2019/03/21/css06/</id>
+    <published>2019-03-21T08:38:33.000Z</published>
+    <updated>2019-03-21T08:38:33.697Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>css05</title>
+    <link href="http://yoursite.com/2019/03/21/css05/"/>
+    <id>http://yoursite.com/2019/03/21/css05/</id>
+    <published>2019-03-21T08:38:20.000Z</published>
+    <updated>2019-03-21T08:38:20.566Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>css04</title>
+    <link href="http://yoursite.com/2019/03/21/css04/"/>
+    <id>http://yoursite.com/2019/03/21/css04/</id>
+    <published>2019-03-21T08:38:09.000Z</published>
+    <updated>2019-03-21T08:38:09.345Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>css03</title>
+    <link href="http://yoursite.com/2019/03/21/css03/"/>
+    <id>http://yoursite.com/2019/03/21/css03/</id>
+    <published>2019-03-21T08:37:50.000Z</published>
+    <updated>2019-03-21T08:37:50.526Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>css02</title>
+    <link href="http://yoursite.com/2019/03/21/css02/"/>
+    <id>http://yoursite.com/2019/03/21/css02/</id>
+    <published>2019-03-21T08:35:48.000Z</published>
+    <updated>2019-03-21T08:35:48.543Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>css01</title>
+    <link href="http://yoursite.com/2019/03/21/css01/"/>
+    <id>http://yoursite.com/2019/03/21/css01/</id>
+    <published>2019-03-21T08:35:35.000Z</published>
+    <updated>2019-03-21T08:35:35.109Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>html03</title>
+    <link href="http://yoursite.com/2019/03/21/html03/"/>
+    <id>http://yoursite.com/2019/03/21/html03/</id>
+    <published>2019-03-21T08:34:28.000Z</published>
+    <updated>2019-03-21T09:48:57.187Z</updated>
     
     <summary type="html">
     
@@ -29,12 +113,96 @@
       
         
         
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+          &lt;h1 id=&quot;表单系列标签&quot;&gt;&lt;a href=&quot;#表单系列标签&quot; class=&quot;headerlink&quot; title=&quot;表单系列标签&quot;&gt;&lt;/a&gt;表单系列标签&lt;/h1&gt;&lt;h1 id=&quot;没有语义的布局标签&quot;&gt;&lt;a href=&quot;#没有语义的布局标签&quot;
         
       
     
     </summary>
     
+      <category term="HTML" scheme="http://yoursite.com/categories/HTML/"/>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html02</title>
+    <link href="http://yoursite.com/2019/03/21/html02/"/>
+    <id>http://yoursite.com/2019/03/21/html02/</id>
+    <published>2019-03-21T06:07:38.000Z</published>
+    <updated>2019-03-21T07:40:08.611Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;链接标签&quot;&gt;&lt;a href=&quot;#链接标签&quot; class=&quot;headerlink&quot; title=&quot;链接标签&quot;&gt;&lt;/a&gt;链接标签&lt;/h1&gt;&lt;h2 id=&quot;a标签（Anchor）：超链接（锚）&quot;&gt;&lt;a href=&quot;#a标签（Anchor）：超链接（锚）&quot; class=&quot;headerlink&quot; title=&quot;a标签（Anchor）：超链接（锚）&quot;&gt;&lt;/a&gt;a标签（Anchor）：超链接（锚）&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;作用：跳转或定位（超链接、锚链接、a链接、a标签）&lt;/p&gt;
+&lt;p&gt;特点：没访问过显示蓝色，访问过显示紫色（清空缓存恢复成蓝色）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;a标签的跳转功能&quot;&gt;&lt;a href=&quot;#a标签的跳转功能&quot; class=&quot;headerlink&quot; title=&quot;a标签的跳转功能&quot;&gt;&lt;/a&gt;a标签的跳转功能&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;作用：可以从一个页面跳转到另一个页面&lt;/p&gt;
+&lt;p&gt;格式：&lt;code&gt;&amp;lt;a href=&amp;quot;跳转目标&amp;quot; target=&amp;quot;窗口弹出方式&amp;quot;&amp;gt;文本或图像&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;注意：a标签不能相互嵌套&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="HTML" scheme="http://yoursite.com/categories/HTML/"/>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html01</title>
+    <link href="http://yoursite.com/2019/03/21/html01/"/>
+    <id>http://yoursite.com/2019/03/21/html01/</id>
+    <published>2019-03-21T04:28:52.000Z</published>
+    <updated>2019-03-21T08:50:43.701Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Html基础01&quot;&gt;&lt;a href=&quot;#Html基础01&quot; class=&quot;headerlink&quot; title=&quot;Html基础01&quot;&gt;&lt;/a&gt;Html基础01&lt;/h1&gt;&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 常用的五大浏览器&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; WEB三大组成部分&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; HTML的基本结构&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 常见的单标签&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 常见双标签&lt;/li&gt;
+&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 相对路径的三种形式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="HTML" scheme="http://yoursite.com/categories/HTML/"/>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>margin</title>
+    <link href="http://yoursite.com/2019/03/21/margin/"/>
+    <id>http://yoursite.com/2019/03/21/margin/</id>
+    <published>2019-03-21T04:28:34.000Z</published>
+    <updated>2019-03-21T08:41:53.798Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;margin的垂直合并现象&quot;&gt;&lt;a href=&quot;#margin的垂直合并现象&quot; class=&quot;headerlink&quot; title=&quot;margin的垂直合并现象&quot;&gt;&lt;/a&gt;margin的垂直合并现象&lt;/h2&gt;&lt;p&gt;水平布局的盒子：设置了左右的margin，margin值会叠加（正常情况），最终两个盒子之间的距离，就是两个margin值的和。&lt;/p&gt;
+&lt;p&gt;垂直布局的盒子：设置了上下的margin，margin值会合并（特殊合并现象），最终两个盒子之间的距离，就是两个margin中的最大值。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2019/03/21/margin/001.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;解决方法：避免即可（一般垂直方向，只给一个盒子设置mrgin值即可）。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+    
+      <category term="margin" scheme="http://yoursite.com/tags/margin/"/>
     
   </entry>
   
