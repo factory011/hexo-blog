@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[css06]]></title>
     <url>%2F2019%2F03%2F22%2Fcss06%2F</url>
-    <content type="text"><![CDATA[版心 宽度固定且水平居中的盒子 因为主要内容都放在版心中，可以适应不同的屏幕大小 123456.w &#123; width: 1200px; margin: 0 auto;&#125;&lt;div class="w"&gt;&lt;/div&gt; 常见的布局方式一列固定宽度且居中 常见布局结构，一般每个盒子都设置版心 \blog\source_posts\css06\001.jpg) 两列左窄右宽型 常见的就是banner部分左侧导航、右侧轮播图的效果 \blog\source_posts\css06\002.jpg) 通栏平均分布型 占满浏览器的一行叫做通栏，通栏可以不用设置宽度，默认独占一行 \blog\source_posts\css06\003.jpg) 清除浮动12345678.clearfix::after &#123; content: ''; display: block; clear: both; height: 0; line-height: 0; visibility: hidden;&#125;]]></content>
+    <content type="text"><![CDATA[版心 宽度固定且水平居中的盒子 因为主要内容都放在版心中，可以适应不同的屏幕大小 123456.w &#123; width: 1200px; margin: 0 auto;&#125;&lt;div class="w"&gt;&lt;/div&gt; 常见的布局方式一列固定宽度且居中 常见布局结构，一般每个盒子都设置版心 两列左窄右宽型 常见的就是banner部分左侧导航、右侧轮播图的效果 通栏平均分布型 占满浏览器的一行叫做通栏，通栏可以不用设置宽度，默认独占一行 清除浮动12345678.clearfix::after &#123; content: ''; display: block; clear: both; height: 0; line-height: 0; visibility: hidden;&#125;]]></content>
       <categories>
         <category>CSS</category>
       </categories>
