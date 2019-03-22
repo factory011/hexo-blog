@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="css,">
 
 
 
@@ -88,17 +88,18 @@
 
 
 
-<meta name="description" content="编程是一种单调的生活，因此程序员比普通人需要更多的关怀，更多的友情">
+<meta name="description" content="伪元素 假的元素  对比  html中的标签就是元素 假的元素，通过css模拟的元素（自己写的html结构中是没有的）">
+<meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css05">
 <meta property="og:url" content="http://yoursite.com/2019/03/21/css05/index.html">
 <meta property="og:site_name" content="浪里个小胖子">
-<meta property="og:description" content="编程是一种单调的生活，因此程序员比普通人需要更多的关怀，更多的友情">
+<meta property="og:description" content="伪元素 假的元素  对比  html中的标签就是元素 假的元素，通过css模拟的元素（自己写的html结构中是没有的）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-21T08:38:20.566Z">
+<meta property="og:updated_time" content="2019-03-22T05:48:25.217Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css05">
-<meta name="twitter:description" content="编程是一种单调的生活，因此程序员比普通人需要更多的关怀，更多的友情">
+<meta name="twitter:description" content="伪元素 假的元素  对比  html中的标签就是元素 假的元素，通过css模拟的元素（自己写的html结构中是没有的）">
 
 
 
@@ -343,6 +344,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -351,6 +374,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 		  
 		  
@@ -375,7 +403,77 @@
       
 
       
-        
+        <h1 id="伪元素"><a href="#伪元素" class="headerlink" title="伪元素"></a>伪元素</h1><ul>
+<li><p>假的元素</p>
+</li>
+<li><p>对比</p>
+<blockquote>
+<p>html中的标签就是元素</p>
+<p>假的元素，通过css模拟的元素（自己写的html结构中是没有的）</p>
+</blockquote>
+<a id="more"></a>
+</li>
+<li><p>种类</p>
+<blockquote>
+<p>::before 在…前面，在元素内容最前面，添加一个伪元素</p>
+<p>::after  在…后面，在元素内容 的最后面，添加设置一个伪元素</p>
+</blockquote>
+</li>
+<li><p>注意点</p>
+<blockquote>
+<p>必须设置content属性</p>
+<p>默认的伪元素是行内元素</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h1><h2 id="浮动作用"><a href="#浮动作用" class="headerlink" title="浮动作用"></a>浮动作用</h2><p>作用：解决盒子在水平方向布局的问题</p>
+<p>取值：</p>
+<blockquote>
+<p>float：left（左浮动）、float：right（右浮动）</p>
+</blockquote>
+<p>标准流：页面布局从左往右，从上往下布局</p>
+<h2 id="浮动特点"><a href="#浮动特点" class="headerlink" title="浮动特点"></a>浮动特点</h2><ol>
+<li>浮动的元素会脱离标准流（脱标），在标准流中不占位置</li>
+<li>浮动的元素会覆盖在标准流的上面</li>
+<li>浮动的元素会在已经浮动好的元素后面布局</li>
+<li>浮动的元素只会影响下面的元素（只会盖住下面的元素），会受到上面元素边界的影响</li>
+<li>浮动的元素一行可以显示多个、可以设置宽高</li>
+</ol>
+<h2 id="浮动影响"><a href="#浮动影响" class="headerlink" title="浮动影响"></a>浮动影响</h2><p>父元素没有高度：</p>
+<blockquote>
+<p>如果一个父元素没有设置宽高，默认高度内容撑开，此时，所有的子元素都浮动，浮动在标准流不占位置，不会撑开父元素</p>
+</blockquote>
+<p>清除浮动带来的影响-》给父元素高度</p>
+<p>解决方法如下：</p>
+<ul>
+<li><p>设高法，直接给父元素设置高度，通用性不强</p>
+</li>
+<li><p>额外标签法</p>
+<blockquote>
+<p>在父元素的最后面，添加一个块级元素</p>
+<p>给新添加的块级元素设置clear：both，清除上面盒子浮动造成的影响</p>
+<p>缺点：需要额外添加标签，提高了html结构复杂度</p>
+</blockquote>
+</li>
+<li><p>单伪元素法</p>
+<blockquote>
+<p>只能用::after</p>
+<p><strong>本质上和额外标签法一样</strong></p>
+<p>clearfix</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt; .clearfix::after &#123;</span><br><span class="line">&gt;     content: "";</span><br><span class="line">&gt;     display: block;</span><br><span class="line">&gt;     clear: both;</span><br><span class="line">&gt;     height: 0;</span><br><span class="line">&gt;     line-height: 0;</span><br><span class="line">&gt;     visibility: hidden;</span><br><span class="line">&gt; &#125;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+<li><p>overflow：hidden</p>
+<blockquote>
+<p>让盒子成为一个BFC盒子</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="浮动使用场景"><a href="#浮动使用场景" class="headerlink" title="浮动使用场景"></a>浮动使用场景</h2><ul>
+<li>早期-用于图文环绕</li>
+<li>现在-用于水平方向的布局</li>
+</ul>
+
       
     </div>
     
@@ -389,6 +487,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag"><i class="fa fa-tag"></i> css</a>
+          
+        </div>
       
 
       
@@ -409,8 +513,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/21/css06/" rel="prev" title="css06">
-                css06 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/22/css01/" rel="prev" title="css01">
+                css01 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -463,8 +567,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -503,7 +616,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -550,6 +663,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#伪元素"><span class="nav-text">伪元素</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#浮动"><span class="nav-text">浮动</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#浮动作用"><span class="nav-text">浮动作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮动特点"><span class="nav-text">浮动特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮动影响"><span class="nav-text">浮动影响</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浮动使用场景"><span class="nav-text">浮动使用场景</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -588,19 +717,39 @@
 
 
 <div>
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_site_pv" style="display:none">
-    本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+    总访问量 <span id="busuanzi_value_site_pv"></span> 次
     <span class="post-meta-divider">|</span>
 </span>
 <span id="busuanzi_container_site_uv" style="display:none">
-    有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
+    访客数<span id="busuanzi_value_site_uv"></span>人
 </span>
 </div>
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 

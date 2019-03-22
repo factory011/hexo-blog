@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-21T08:38:33.697Z</updated>
+  <updated>2019-03-22T08:34:54.603Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,15 +18,47 @@
   
   <entry>
     <title>css06</title>
-    <link href="http://yoursite.com/2019/03/21/css06/"/>
-    <id>http://yoursite.com/2019/03/21/css06/</id>
-    <published>2019-03-21T08:38:33.000Z</published>
-    <updated>2019-03-21T08:38:33.697Z</updated>
+    <link href="http://yoursite.com/2019/03/22/css06/"/>
+    <id>http://yoursite.com/2019/03/22/css06/</id>
+    <published>2019-03-22T06:31:09.000Z</published>
+    <updated>2019-03-22T08:34:54.603Z</updated>
     
     <summary type="html">
     
+      &lt;h1 id=&quot;版心&quot;&gt;&lt;a href=&quot;#版心&quot; class=&quot;headerlink&quot; title=&quot;版心&quot;&gt;&lt;/a&gt;版心&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;宽度固定且水平居中的盒子&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;因为主要内容都放在版心中，可以适应不同的屏幕大小&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.w &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    width: 1200px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    margin: 0 auto;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;w&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
     </summary>
     
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css01</title>
+    <link href="http://yoursite.com/2019/03/22/css01/"/>
+    <id>http://yoursite.com/2019/03/22/css01/</id>
+    <published>2019-03-22T01:08:35.000Z</published>
+    <updated>2019-03-22T03:59:59.015Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;认识CSS&quot;&gt;&lt;a href=&quot;#认识CSS&quot; class=&quot;headerlink&quot; title=&quot;认识CSS&quot;&gt;&lt;/a&gt;认识CSS&lt;/h1&gt;&lt;h2 id=&quot;CSS概念&quot;&gt;&lt;a href=&quot;#CSS概念&quot; class=&quot;headerlink&quot; title=&quot;CSS概念&quot;&gt;&lt;/a&gt;CSS概念&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;层叠样式表&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
     
   </entry>
   
@@ -35,12 +67,25 @@
     <link href="http://yoursite.com/2019/03/21/css05/"/>
     <id>http://yoursite.com/2019/03/21/css05/</id>
     <published>2019-03-21T08:38:20.000Z</published>
-    <updated>2019-03-21T08:38:20.566Z</updated>
+    <updated>2019-03-22T05:48:25.217Z</updated>
     
     <summary type="html">
     
+      &lt;h1 id=&quot;伪元素&quot;&gt;&lt;a href=&quot;#伪元素&quot; class=&quot;headerlink&quot; title=&quot;伪元素&quot;&gt;&lt;/a&gt;伪元素&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;假的元素&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;对比&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;html中的标签就是元素&lt;/p&gt;
+&lt;p&gt;假的元素，通过css模拟的元素（自己写的html结构中是没有的）&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;&lt;/ul&gt;
+    
     </summary>
     
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
     
   </entry>
   
@@ -49,12 +94,23 @@
     <link href="http://yoursite.com/2019/03/21/css04/"/>
     <id>http://yoursite.com/2019/03/21/css04/</id>
     <published>2019-03-21T08:38:09.000Z</published>
-    <updated>2019-03-21T08:38:09.345Z</updated>
+    <updated>2019-03-22T05:48:05.042Z</updated>
     
     <summary type="html">
     
+      &lt;h1 id=&quot;盒子模型&quot;&gt;&lt;a href=&quot;#盒子模型&quot; class=&quot;headerlink&quot; title=&quot;盒子模型&quot;&gt;&lt;/a&gt;盒子模型&lt;/h1&gt;&lt;h2 id=&quot;盒子模型的组成&quot;&gt;&lt;a href=&quot;#盒子模型的组成&quot; class=&quot;headerlink&quot; title=&quot;盒子模型的组成&quot;&gt;&lt;/a&gt;盒子模型的组成&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;content 内容&lt;/p&gt;
+&lt;p&gt;padding 内边距&lt;/p&gt;
+&lt;p&gt;border 边框&lt;/p&gt;
+&lt;p&gt;margin 外边距&lt;/p&gt;
+&lt;/blockquote&gt;
+    
     </summary>
     
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
     
   </entry>
   
@@ -63,12 +119,19 @@
     <link href="http://yoursite.com/2019/03/21/css03/"/>
     <id>http://yoursite.com/2019/03/21/css03/</id>
     <published>2019-03-21T08:37:50.000Z</published>
-    <updated>2019-03-21T08:37:50.526Z</updated>
+    <updated>2019-03-22T04:00:24.185Z</updated>
     
     <summary type="html">
     
+      &lt;h1 id=&quot;背景相关属性&quot;&gt;&lt;a href=&quot;#背景相关属性&quot; class=&quot;headerlink&quot; title=&quot;背景相关属性&quot;&gt;&lt;/a&gt;背景相关属性&lt;/h1&gt;&lt;h2 id=&quot;background-color（背景颜色）&quot;&gt;&lt;a href=&quot;#background-color（背景颜色）&quot; class=&quot;headerlink&quot; title=&quot;background-color（背景颜色）&quot;&gt;&lt;/a&gt;background-color（背景颜色）&lt;/h2&gt;&lt;p&gt;取值：关键字、rgb、rgba、#fff&lt;/p&gt;
+&lt;h2 id=&quot;background-image（背景图片）&quot;&gt;&lt;a href=&quot;#background-image（背景图片）&quot; class=&quot;headerlink&quot; title=&quot;background-image（背景图片）&quot;&gt;&lt;/a&gt;background-image（背景图片）&lt;/h2&gt;&lt;p&gt;取值：url路径，repeat平铺&lt;/p&gt;
+    
     </summary>
     
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
     
   </entry>
   
@@ -77,26 +140,21 @@
     <link href="http://yoursite.com/2019/03/21/css02/"/>
     <id>http://yoursite.com/2019/03/21/css02/</id>
     <published>2019-03-21T08:35:48.000Z</published>
-    <updated>2019-03-21T08:35:48.543Z</updated>
+    <updated>2019-03-22T04:00:09.345Z</updated>
     
     <summary type="html">
     
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>css01</title>
-    <link href="http://yoursite.com/2019/03/21/css01/"/>
-    <id>http://yoursite.com/2019/03/21/css01/</id>
-    <published>2019-03-21T08:35:35.000Z</published>
-    <updated>2019-03-21T08:35:35.109Z</updated>
-    
-    <summary type="html">
+      &lt;h1 id=&quot;CSS三种位置书写方式&quot;&gt;&lt;a href=&quot;#CSS三种位置书写方式&quot; class=&quot;headerlink&quot; title=&quot;CSS三种位置书写方式&quot;&gt;&lt;/a&gt;CSS三种位置书写方式&lt;/h1&gt;&lt;h2 id=&quot;内嵌式&quot;&gt;&lt;a href=&quot;#内嵌式&quot; class=&quot;headerlink&quot; title=&quot;内嵌式&quot;&gt;&lt;/a&gt;内嵌式&lt;/h2&gt;&lt;p&gt;书写位置：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;style标签内，style标签写在head中，title下面&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
+      <category term="CSS" scheme="http://yoursite.com/categories/CSS/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
     
   </entry>
   
@@ -105,17 +163,12 @@
     <link href="http://yoursite.com/2019/03/21/html03/"/>
     <id>http://yoursite.com/2019/03/21/html03/</id>
     <published>2019-03-21T08:34:28.000Z</published>
-    <updated>2019-03-21T09:48:57.187Z</updated>
+    <updated>2019-03-22T00:55:48.144Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;表单系列标签&quot;&gt;&lt;a href=&quot;#表单系列标签&quot; class=&quot;headerlink&quot; title=&quot;表单系列标签&quot;&gt;&lt;/a&gt;表单系列标签&lt;/h1&gt;&lt;h1 id=&quot;没有语义的布局标签&quot;&gt;&lt;a href=&quot;#没有语义的布局标签&quot;
-        
-      
+      &lt;h1 id=&quot;表单系列标签&quot;&gt;&lt;a href=&quot;#表单系列标签&quot; class=&quot;headerlink&quot; title=&quot;表单系列标签&quot;&gt;&lt;/a&gt;表单系列标签&lt;/h1&gt;&lt;h2 id=&quot;input标签&quot;&gt;&lt;a href=&quot;#input标签&quot; class=&quot;headerlink&quot; title=&quot;input标签&quot;&gt;&lt;/a&gt;input标签&lt;/h2&gt;&lt;p&gt;作用：收集用户数据，一般用于登录或注册页&lt;/p&gt;
+&lt;p&gt;type类型：&lt;code&gt;text&lt;/code&gt;文本框、&lt;code&gt;password&lt;/code&gt;密码框、&lt;code&gt;radio&lt;/code&gt;单选框、&lt;code&gt;checkbox&lt;/code&gt;多选框、&lt;code&gt;file&lt;/code&gt;文件选择框、&lt;code&gt;sublimt&lt;/code&gt;提交框、&lt;code&gt;reset&lt;/code&gt;重置框、&lt;code&gt;button&lt;/code&gt;普通按钮、&lt;code&gt;image&lt;/code&gt;图片按钮&lt;/p&gt;
     
     </summary>
     
@@ -131,7 +184,7 @@
     <link href="http://yoursite.com/2019/03/21/html02/"/>
     <id>http://yoursite.com/2019/03/21/html02/</id>
     <published>2019-03-21T06:07:38.000Z</published>
-    <updated>2019-03-21T07:40:08.611Z</updated>
+    <updated>2019-03-22T00:55:31.260Z</updated>
     
     <summary type="html">
     
@@ -139,11 +192,6 @@
 &lt;p&gt;作用：跳转或定位（超链接、锚链接、a链接、a标签）&lt;/p&gt;
 &lt;p&gt;特点：没访问过显示蓝色，访问过显示紫色（清空缓存恢复成蓝色）&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;a标签的跳转功能&quot;&gt;&lt;a href=&quot;#a标签的跳转功能&quot; class=&quot;headerlink&quot; title=&quot;a标签的跳转功能&quot;&gt;&lt;/a&gt;a标签的跳转功能&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;作用：可以从一个页面跳转到另一个页面&lt;/p&gt;
-&lt;p&gt;格式：&lt;code&gt;&amp;lt;a href=&amp;quot;跳转目标&amp;quot; target=&amp;quot;窗口弹出方式&amp;quot;&amp;gt;文本或图像&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;注意：a标签不能相互嵌套&lt;/p&gt;
     
     </summary>
     
@@ -159,20 +207,20 @@
     <link href="http://yoursite.com/2019/03/21/html01/"/>
     <id>http://yoursite.com/2019/03/21/html01/</id>
     <published>2019-03-21T04:28:52.000Z</published>
-    <updated>2019-03-21T08:50:43.701Z</updated>
+    <updated>2019-03-22T05:52:31.206Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Html基础01&quot;&gt;&lt;a href=&quot;#Html基础01&quot; class=&quot;headerlink&quot; title=&quot;Html基础01&quot;&gt;&lt;/a&gt;Html基础01&lt;/h1&gt;&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 常用的五大浏览器&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; WEB三大组成部分&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; HTML的基本结构&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 常见的单标签&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 常见双标签&lt;/li&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot;&gt; 相对路径的三种形式&lt;/li&gt;
-&lt;/ul&gt;
+      &lt;h1 id=&quot;五大浏览器&quot;&gt;&lt;a href=&quot;#五大浏览器&quot; class=&quot;headerlink&quot; title=&quot;五大浏览器&quot;&gt;&lt;/a&gt;五大浏览器&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;IE（Edge）浏览器&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;内核：Trident&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Firefox（火狐）浏览器&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;内核：Gecko&lt;/p&gt;
+&lt;/blockquote&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
@@ -188,14 +236,11 @@
     <link href="http://yoursite.com/2019/03/21/margin/"/>
     <id>http://yoursite.com/2019/03/21/margin/</id>
     <published>2019-03-21T04:28:34.000Z</published>
-    <updated>2019-03-21T08:41:53.798Z</updated>
+    <updated>2019-03-22T01:55:26.528Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;margin的垂直合并现象&quot;&gt;&lt;a href=&quot;#margin的垂直合并现象&quot; class=&quot;headerlink&quot; title=&quot;margin的垂直合并现象&quot;&gt;&lt;/a&gt;margin的垂直合并现象&lt;/h2&gt;&lt;p&gt;水平布局的盒子：设置了左右的margin，margin值会叠加（正常情况），最终两个盒子之间的距离，就是两个margin值的和。&lt;/p&gt;
-&lt;p&gt;垂直布局的盒子：设置了上下的margin，margin值会合并（特殊合并现象），最终两个盒子之间的距离，就是两个margin中的最大值。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/2019/03/21/margin/001.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;解决方法：避免即可（一般垂直方向，只给一个盒子设置mrgin值即可）。&lt;/p&gt;
+      &lt;h1 id=&quot;margin的垂直合并现象&quot;&gt;&lt;a href=&quot;#margin的垂直合并现象&quot; class=&quot;headerlink&quot; title=&quot;margin的垂直合并现象&quot;&gt;&lt;/a&gt;margin的垂直合并现象&lt;/h1&gt;&lt;h2 id=&quot;水平布局的盒子&quot;&gt;&lt;a href=&quot;#水平布局的盒子&quot; class=&quot;headerlink&quot; title=&quot;水平布局的盒子&quot;&gt;&lt;/a&gt;水平布局的盒子&lt;/h2&gt;&lt;p&gt;设置了左右的margin，margin值会叠加（正常情况），最终两个盒子之间的距离，就是两个margin值的和。&lt;/p&gt;
     
     </summary>
     

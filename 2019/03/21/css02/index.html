@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="css,">
 
 
 
@@ -88,17 +88,18 @@
 
 
 
-<meta name="description" content="编程是一种单调的生活，因此程序员比普通人需要更多的关怀，更多的友情">
+<meta name="description" content="CSS三种位置书写方式内嵌式书写位置：  style标签内，style标签写在head中，title下面">
+<meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css02">
 <meta property="og:url" content="http://yoursite.com/2019/03/21/css02/index.html">
 <meta property="og:site_name" content="浪里个小胖子">
-<meta property="og:description" content="编程是一种单调的生活，因此程序员比普通人需要更多的关怀，更多的友情">
+<meta property="og:description" content="CSS三种位置书写方式内嵌式书写位置：  style标签内，style标签写在head中，title下面">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-21T08:35:48.543Z">
+<meta property="og:updated_time" content="2019-03-22T04:00:09.345Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css02">
-<meta name="twitter:description" content="编程是一种单调的生活，因此程序员比普通人需要更多的关怀，更多的友情">
+<meta name="twitter:description" content="CSS三种位置书写方式内嵌式书写位置：  style标签内，style标签写在head中，title下面">
 
 
 
@@ -343,6 +344,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -351,6 +374,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 		  
 		  
@@ -375,7 +403,108 @@
       
 
       
-        
+        <h1 id="CSS三种位置书写方式"><a href="#CSS三种位置书写方式" class="headerlink" title="CSS三种位置书写方式"></a>CSS三种位置书写方式</h1><h2 id="内嵌式"><a href="#内嵌式" class="headerlink" title="内嵌式"></a>内嵌式</h2><p>书写位置：</p>
+<blockquote>
+<p>style标签内，style标签写在head中，title下面</p>
+</blockquote>
+<a id="more"></a>
+<p>作用范围：</p>
+<blockquote>
+<p>当前页面</p>
+</blockquote>
+<p>使用场景：</p>
+<blockquote>
+<p>练习的案例，demo中</p>
+</blockquote>
+<h2 id="行内式"><a href="#行内式" class="headerlink" title="行内式"></a>行内式</h2><p>书写位置：</p>
+<blockquote>
+<p>标签内style属性中</p>
+</blockquote>
+<p>作用范围：</p>
+<blockquote>
+<p>当前标签</p>
+</blockquote>
+<p>使用场景：</p>
+<blockquote>
+<p>一般配合 js使用</p>
+</blockquote>
+<h2 id="外联式（外链式）"><a href="#外联式（外链式）" class="headerlink" title="外联式（外链式）"></a>外联式（外链式）</h2><p>书写位置：</p>
+<blockquote>
+<p>单独的css文件中，通过link引入</p>
+</blockquote>
+<p>作用范围：</p>
+<blockquote>
+<p>引入生效</p>
+</blockquote>
+<p>使用场景：</p>
+<blockquote>
+<p>项目中，结构和样式分离</p>
+</blockquote>
+<h1 id="文本相关属性"><a href="#文本相关属性" class="headerlink" title="文本相关属性"></a>文本相关属性</h1><h2 id="text-indent（文本缩进）"><a href="#text-indent（文本缩进）" class="headerlink" title="text-indent（文本缩进）"></a>text-indent（文本缩进）</h2><p>取值：</p>
+<ul>
+<li>数字 + px</li>
+<li>数字 + em（1em = 1倍的font-size）</li>
+</ul>
+<h2 id="text-align（文本对齐）"><a href="#text-align（文本对齐）" class="headerlink" title="text-align（文本对齐）"></a>text-align（文本对齐）</h2><p>取值：</p>
+<ul>
+<li>left 左对齐（默认）</li>
+<li>center 居中</li>
+<li>right 右对齐</li>
+</ul>
+<p>作用范围：</p>
+<ul>
+<li><p>文本内容</p>
+</li>
+<li><p>span a（行内元素）</p>
+</li>
+<li><p>img input（行内块元素）</p>
+</li>
+</ul>
+<p>注意点：对于div、p、h1等独占一行的盒子，不能使用text-align居中</p>
+<h2 id="text-decoration（文本修饰）"><a href="#text-decoration（文本修饰）" class="headerlink" title="text-decoration（文本修饰）"></a>text-decoration（文本修饰）</h2><p>取值：</p>
+<ul>
+<li>none  无样式（一般用于清除a标签的下划线）</li>
+<li>underline  下划线</li>
+<li>line-through 删除线</li>
+</ul>
+<h1 id="CSS三大特性"><a href="#CSS三大特性" class="headerlink" title="CSS三大特性"></a>CSS三大特性</h1><h2 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h2><p>可以继承属性：</p>
+<ul>
+<li>color</li>
+<li>text-开头的</li>
+<li>font-开头的</li>
+<li>line-height</li>
+</ul>
+<p>继承特殊情况：</p>
+<ul>
+<li>a标签颜色不能通过继承设置（会被默认样式覆盖），必须直接作用于a标签</li>
+<li>h标签的字体大小不能通过继承设置（会被默认样式覆盖），必须作用于h标签</li>
+<li>div的宽度不能继承，默认继承父元素宽度的效果</li>
+</ul>
+<p>如果一个标签自己有样式，不会用继承的样式</p>
+<h2 id="层叠性"><a href="#层叠性" class="headerlink" title="层叠性"></a>层叠性</h2><ul>
+<li>同一个标签设置相同的样式属性，下面的会覆盖上面的</li>
+<li>同一个标签设置不同的样式属性，效果叠加</li>
+<li>必须是优先级相同的情况，才比较层叠性</li>
+</ul>
+<h2 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h2><p>优先级大小公式：</p>
+<blockquote>
+<p>继承 &lt; 通配符选择器  &lt; 标签选择器  &lt;  类选择器  &lt;  id选择器      &lt;  行内样式  &lt;  !importance  </p>
+</blockquote>
+<p><strong>注意点：!importance不能提高继承样式的优先级，继承的样式永远最低</strong></p>
+<h1 id="权重计算"><a href="#权重计算" class="headerlink" title="权重计算"></a>权重计算</h1><p>作用：用于比较复合选择器优先级</p>
+<p>权重公式（0,0,0,0）依次为：</p>
+<ul>
+<li>行内样式的个数</li>
+<li>id选择器的个数</li>
+<li>类选择器的个数</li>
+<li>标签选择器的个数</li>
+</ul>
+<p>注意点：</p>
+<blockquote>
+<p><strong>浏览器解析选择器是从右往左</strong></p>
+<p>全都是继承的，优先级看父元素</p>
+</blockquote>
+
       
     </div>
     
@@ -390,6 +519,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag"><i class="fa fa-tag"></i> css</a>
+          
+        </div>
+      
 
       
       
@@ -399,8 +534,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/21/css01/" rel="next" title="css01">
-                <i class="fa fa-chevron-left"></i> css01
+              <a href="/2019/03/21/html03/" rel="next" title="html03">
+                <i class="fa fa-chevron-left"></i> html03
               </a>
             
           </div>
@@ -463,8 +598,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -503,7 +647,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -550,6 +694,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS三种位置书写方式"><span class="nav-text">CSS三种位置书写方式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#内嵌式"><span class="nav-text">内嵌式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行内式"><span class="nav-text">行内式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#外联式（外链式）"><span class="nav-text">外联式（外链式）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文本相关属性"><span class="nav-text">文本相关属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#text-indent（文本缩进）"><span class="nav-text">text-indent（文本缩进）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#text-align（文本对齐）"><span class="nav-text">text-align（文本对齐）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#text-decoration（文本修饰）"><span class="nav-text">text-decoration（文本修饰）</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS三大特性"><span class="nav-text">CSS三大特性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#继承性"><span class="nav-text">继承性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#层叠性"><span class="nav-text">层叠性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#优先级"><span class="nav-text">优先级</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#权重计算"><span class="nav-text">权重计算</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -588,19 +748,39 @@
 
 
 <div>
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_site_pv" style="display:none">
-    本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+    总访问量 <span id="busuanzi_value_site_pv"></span> 次
     <span class="post-meta-divider">|</span>
 </span>
 <span id="busuanzi_container_site_uv" style="display:none">
-    有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
+    访客数<span id="busuanzi_value_site_uv"></span>人
 </span>
 </div>
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 

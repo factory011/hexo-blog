@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="css,">
 
 
 
@@ -88,17 +88,18 @@
 
 
 
-<meta name="description" content="编程是一种单调的生活，因此程序员比普通人需要更多的关怀，更多的友情">
+<meta name="description" content="盒子模型盒子模型的组成 content 内容 padding 内边距 border 边框 margin 外边距">
+<meta name="keywords" content="css">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css04">
 <meta property="og:url" content="http://yoursite.com/2019/03/21/css04/index.html">
 <meta property="og:site_name" content="浪里个小胖子">
-<meta property="og:description" content="编程是一种单调的生活，因此程序员比普通人需要更多的关怀，更多的友情">
+<meta property="og:description" content="盒子模型盒子模型的组成 content 内容 padding 内边距 border 边框 margin 外边距">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-21T08:38:09.345Z">
+<meta property="og:updated_time" content="2019-03-22T05:48:05.042Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css04">
-<meta name="twitter:description" content="编程是一种单调的生活，因此程序员比普通人需要更多的关怀，更多的友情">
+<meta name="twitter:description" content="盒子模型盒子模型的组成 content 内容 padding 内边距 border 边框 margin 外边距">
 
 
 
@@ -343,6 +344,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -351,6 +374,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 		  
 		  
@@ -375,7 +403,62 @@
       
 
       
-        
+        <h1 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h1><h2 id="盒子模型的组成"><a href="#盒子模型的组成" class="headerlink" title="盒子模型的组成"></a>盒子模型的组成</h2><blockquote>
+<p>content 内容</p>
+<p>padding 内边距</p>
+<p>border 边框</p>
+<p>margin 外边距</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="边框"><a href="#边框" class="headerlink" title="边框"></a>边框</h2><h3 id="相关属性"><a href="#相关属性" class="headerlink" title="相关属性"></a>相关属性</h3><ul>
+<li><p>border-width 边框宽度</p>
+</li>
+<li><p>border-style 边框样式</p>
+<blockquote>
+<p>solid 实线</p>
+<p>dashed 虚线</p>
+<p>dotted 点线</p>
+</blockquote>
+</li>
+<li><p>border-color 边框颜色</p>
+</li>
+</ul>
+<h3 id="边框连写"><a href="#边框连写" class="headerlink" title="边框连写"></a>边框连写</h3><p>border：1px solid #ccc</p>
+<h3 id="边框合并"><a href="#边框合并" class="headerlink" title="边框合并"></a>边框合并</h3><ul>
+<li>border-collapse：collapse</li>
+<li>可以让两个边框合并成一个</li>
+<li>使用场景：只在表格中</li>
+</ul>
+<p><strong>注意点：盒子边框能撑大盒子</strong></p>
+<h2 id="内边距"><a href="#内边距" class="headerlink" title="内边距"></a>内边距</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><blockquote>
+<p>盒子边框到盒子内容的距离</p>
+</blockquote>
+<h3 id="取值"><a href="#取值" class="headerlink" title="取值"></a>取值</h3><ul>
+<li>padding：50px； 上下左右为50px</li>
+<li>padding：10px 50px； 上下为10px，左右为50px</li>
+<li>padding：10px 20px 30px； 上10px，左右为20px，下为30px</li>
+<li>padding：10px 20px 30px 40px；依次为上右下左，顺时针设置</li>
+</ul>
+<h2 id="盒子大小计算公式"><a href="#盒子大小计算公式" class="headerlink" title="盒子大小计算公式"></a>盒子大小计算公式</h2><blockquote>
+<p>宽 = 左边框 + 左内边距 + 右内边距 + 右边框</p>
+</blockquote>
+<h2 id="不会撑大盒子的特殊情况"><a href="#不会撑大盒子的特殊情况" class="headerlink" title="不会撑大盒子的特殊情况"></a>不会撑大盒子的特殊情况</h2><ul>
+<li>如果两个互相嵌套的块级元素，如果子元素没有设置宽度，子元素的宽度默认继承父元素，此时，如果设置子元素水平方向的padding或border，不会撑大盒子</li>
+<li>重点：子元素没有设宽，宽度默认继承父元素，如果设置了水平方向的padding或border，浏览器会自动在内容部分完成内减的操作，不会撑大盒子</li>
+</ul>
+<h2 id="CSS3盒模型"><a href="#CSS3盒模型" class="headerlink" title="CSS3盒模型"></a>CSS3盒模型</h2><p>box-sizing：border-box;</p>
+<ul>
+<li>设置宽高后，如果有border或pdding，可以自动内减</li>
+<li>没有兼容问题，IE8及以上都支持</li>
+</ul>
+<h2 id="外边距"><a href="#外边距" class="headerlink" title="外边距"></a>外边距</h2><h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><p>控制盒子与盒子之间的距离</p>
+<h3 id="取值-1"><a href="#取值-1" class="headerlink" title="取值"></a>取值</h3><ul>
+<li>margin：50px； 上下左右为50px</li>
+<li>margin：10px 50px； 上下为10px，左右为50px</li>
+<li>margin：10px 20px 30px； 上10px，左右为20px，下为30px</li>
+<li>margin：10px 20px 30px 40px；依次为上右下左，顺时针设置</li>
+</ul>
+
       
     </div>
     
@@ -389,6 +472,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag"><i class="fa fa-tag"></i> css</a>
+          
+        </div>
       
 
       
@@ -463,8 +552,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -503,7 +601,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -550,6 +648,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#盒子模型"><span class="nav-text">盒子模型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#盒子模型的组成"><span class="nav-text">盒子模型的组成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#边框"><span class="nav-text">边框</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#相关属性"><span class="nav-text">相关属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边框连写"><span class="nav-text">边框连写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边框合并"><span class="nav-text">边框合并</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内边距"><span class="nav-text">内边距</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#取值"><span class="nav-text">取值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#盒子大小计算公式"><span class="nav-text">盒子大小计算公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不会撑大盒子的特殊情况"><span class="nav-text">不会撑大盒子的特殊情况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CSS3盒模型"><span class="nav-text">CSS3盒模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#外边距"><span class="nav-text">外边距</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义-1"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#取值-1"><span class="nav-text">取值</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -588,19 +702,39 @@
 
 
 <div>
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 <span id="busuanzi_container_site_pv" style="display:none">
-    本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+    总访问量 <span id="busuanzi_value_site_pv"></span> 次
     <span class="post-meta-divider">|</span>
 </span>
 <span id="busuanzi_container_site_uv" style="display:none">
-    有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
+    访客数<span id="busuanzi_value_site_uv"></span>人
 </span>
 </div>
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
 
 
 
