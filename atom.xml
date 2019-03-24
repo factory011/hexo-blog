@@ -6,29 +6,47 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-24T05:02:57.847Z</updated>
+  <updated>2019-03-24T06:18:23.550Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>Liang He</name>
+    <name>L.H</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo+NexT博客侧栏加上动态词云效果</title>
+    <link href="http://yoursite.com/2019/03/24/Hexo-NexT%E5%8D%9A%E5%AE%A2%E4%BE%A7%E6%A0%8F%E5%8A%A0%E4%B8%8A%E5%8A%A8%E6%80%81%E8%AF%8D%E4%BA%91%E6%95%88%E6%9E%9C/"/>
+    <id>http://yoursite.com/2019/03/24/Hexo-NexT博客侧栏加上动态词云效果/</id>
+    <published>2019-03-24T05:50:04.000Z</published>
+    <updated>2019-03-24T06:18:23.550Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1、打开hexo目录，通过powershell输入命令安装插件&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-tag-cloud@^2.0.* --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://yoursite.com/categories/Hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>CSS基础学习07</title>
     <link href="http://yoursite.com/2019/03/24/CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A007/"/>
     <id>http://yoursite.com/2019/03/24/CSS基础学习07/</id>
     <published>2019-03-24T00:14:07.000Z</published>
-    <updated>2019-03-24T05:02:57.847Z</updated>
+    <updated>2019-03-24T06:18:01.969Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;定位&quot;&gt;&lt;a href=&quot;#定位&quot; class=&quot;headerlink&quot; title=&quot;定位&quot;&gt;&lt;/a&gt;定位&lt;/h1&gt;&lt;h2 id=&quot;静态定位&quot;&gt;&lt;a href=&quot;#静态定位&quot; class=&quot;headerlink&quot; title=&quot;静态定位&quot;&gt;&lt;/a&gt;静态定位&lt;/h2&gt;&lt;h3 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; title=&quot;格式&quot;&gt;&lt;/a&gt;格式&lt;/h3&gt;&lt;p&gt;&lt;code&gt;position: static;&lt;/code&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;所有标准流中的元素，默认都是静态定位&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h1 id=&quot;定位&quot;&gt;&lt;a href=&quot;#定位&quot; class=&quot;headerlink&quot; title=&quot;定位&quot;&gt;&lt;/a&gt;定位&lt;/h1&gt;&lt;h2 id=&quot;静态定位&quot;&gt;&lt;a href=&quot;#静态定位&quot; class=&quot;headerlink&quot; title=&quot;静态定位&quot;&gt;&lt;/a&gt;静态定位&lt;/h2&gt;
     
     </summary>
     
@@ -44,15 +62,13 @@
     <link href="http://yoursite.com/2019/03/22/CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A006/"/>
     <id>http://yoursite.com/2019/03/22/CSS基础学习06/</id>
     <published>2019-03-22T06:31:09.000Z</published>
-    <updated>2019-03-24T00:21:00.583Z</updated>
+    <updated>2019-03-24T06:17:48.016Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;版心&quot;&gt;&lt;a href=&quot;#版心&quot; class=&quot;headerlink&quot; title=&quot;版心&quot;&gt;&lt;/a&gt;版心&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;宽度固定且水平居中的盒子&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;因为主要内容都放在版心中，可以适应不同的屏幕大小&lt;/p&gt;
-&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;.w &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    width: 1200px;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    margin: 0 auto;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;w&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
@@ -68,13 +84,11 @@
     <link href="http://yoursite.com/2019/03/22/CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A001/"/>
     <id>http://yoursite.com/2019/03/22/CSS基础学习01/</id>
     <published>2019-03-22T01:08:35.000Z</published>
-    <updated>2019-03-23T11:59:12.891Z</updated>
+    <updated>2019-03-24T06:15:18.683Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;认识CSS&quot;&gt;&lt;a href=&quot;#认识CSS&quot; class=&quot;headerlink&quot; title=&quot;认识CSS&quot;&gt;&lt;/a&gt;认识CSS&lt;/h1&gt;&lt;h2 id=&quot;CSS概念&quot;&gt;&lt;a href=&quot;#CSS概念&quot; class=&quot;headerlink&quot; title=&quot;CSS概念&quot;&gt;&lt;/a&gt;CSS概念&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;层叠样式表&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h1 id=&quot;认识CSS&quot;&gt;&lt;a href=&quot;#认识CSS&quot; class=&quot;headerlink&quot; title=&quot;认识CSS&quot;&gt;&lt;/a&gt;认识CSS&lt;/h1&gt;
     
     </summary>
     
@@ -90,18 +104,11 @@
     <link href="http://yoursite.com/2019/03/21/CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A005/"/>
     <id>http://yoursite.com/2019/03/21/CSS基础学习05/</id>
     <published>2019-03-21T08:38:20.000Z</published>
-    <updated>2019-03-23T12:00:29.057Z</updated>
+    <updated>2019-03-24T06:17:28.848Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;伪元素&quot;&gt;&lt;a href=&quot;#伪元素&quot; class=&quot;headerlink&quot; title=&quot;伪元素&quot;&gt;&lt;/a&gt;伪元素&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;假的元素&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;对比&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;html中的标签就是元素&lt;/p&gt;
-&lt;p&gt;假的元素，通过css模拟的元素（自己写的html结构中是没有的）&lt;/p&gt;
-&lt;/blockquote&gt;&lt;/li&gt;&lt;/ul&gt;
+      &lt;h1 id=&quot;伪元素&quot;&gt;&lt;a href=&quot;#伪元素&quot; class=&quot;headerlink&quot; title=&quot;伪元素&quot;&gt;&lt;/a&gt;伪元素&lt;/h1&gt;
     
     </summary>
     
@@ -117,16 +124,11 @@
     <link href="http://yoursite.com/2019/03/21/CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A004/"/>
     <id>http://yoursite.com/2019/03/21/CSS基础学习04/</id>
     <published>2019-03-21T08:38:09.000Z</published>
-    <updated>2019-03-23T12:00:19.859Z</updated>
+    <updated>2019-03-24T06:16:56.941Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;盒子模型&quot;&gt;&lt;a href=&quot;#盒子模型&quot; class=&quot;headerlink&quot; title=&quot;盒子模型&quot;&gt;&lt;/a&gt;盒子模型&lt;/h1&gt;&lt;h2 id=&quot;盒子模型的组成&quot;&gt;&lt;a href=&quot;#盒子模型的组成&quot; class=&quot;headerlink&quot; title=&quot;盒子模型的组成&quot;&gt;&lt;/a&gt;盒子模型的组成&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;content 内容&lt;/p&gt;
-&lt;p&gt;padding 内边距&lt;/p&gt;
-&lt;p&gt;border 边框&lt;/p&gt;
-&lt;p&gt;margin 外边距&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h1 id=&quot;盒子模型&quot;&gt;&lt;a href=&quot;#盒子模型&quot; class=&quot;headerlink&quot; title=&quot;盒子模型&quot;&gt;&lt;/a&gt;盒子模型&lt;/h1&gt;
     
     </summary>
     
@@ -142,12 +144,11 @@
     <link href="http://yoursite.com/2019/03/21/CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A003/"/>
     <id>http://yoursite.com/2019/03/21/CSS基础学习03/</id>
     <published>2019-03-21T08:37:50.000Z</published>
-    <updated>2019-03-23T11:59:50.040Z</updated>
+    <updated>2019-03-24T06:16:22.507Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;背景相关属性&quot;&gt;&lt;a href=&quot;#背景相关属性&quot; class=&quot;headerlink&quot; title=&quot;背景相关属性&quot;&gt;&lt;/a&gt;背景相关属性&lt;/h1&gt;&lt;h2 id=&quot;background-color（背景颜色）&quot;&gt;&lt;a href=&quot;#background-color（背景颜色）&quot; class=&quot;headerlink&quot; title=&quot;background-color（背景颜色）&quot;&gt;&lt;/a&gt;background-color（背景颜色）&lt;/h2&gt;&lt;p&gt;取值：关键字、rgb、rgba、#fff&lt;/p&gt;
-&lt;h2 id=&quot;background-image（背景图片）&quot;&gt;&lt;a href=&quot;#background-image（背景图片）&quot; class=&quot;headerlink&quot; title=&quot;background-image（背景图片）&quot;&gt;&lt;/a&gt;background-image（背景图片）&lt;/h2&gt;&lt;p&gt;取值：url路径，repeat平铺&lt;/p&gt;
+      &lt;h1 id=&quot;背景相关属性&quot;&gt;&lt;a href=&quot;#背景相关属性&quot; class=&quot;headerlink&quot; title=&quot;背景相关属性&quot;&gt;&lt;/a&gt;背景相关属性&lt;/h1&gt;
     
     </summary>
     
@@ -163,14 +164,11 @@
     <link href="http://yoursite.com/2019/03/21/CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A002/"/>
     <id>http://yoursite.com/2019/03/21/CSS基础学习02/</id>
     <published>2019-03-21T08:35:48.000Z</published>
-    <updated>2019-03-23T12:00:03.563Z</updated>
+    <updated>2019-03-24T06:15:50.594Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;CSS三种位置书写方式&quot;&gt;&lt;a href=&quot;#CSS三种位置书写方式&quot; class=&quot;headerlink&quot; title=&quot;CSS三种位置书写方式&quot;&gt;&lt;/a&gt;CSS三种位置书写方式&lt;/h1&gt;&lt;h2 id=&quot;内嵌式&quot;&gt;&lt;a href=&quot;#内嵌式&quot; class=&quot;headerlink&quot; title=&quot;内嵌式&quot;&gt;&lt;/a&gt;内嵌式&lt;/h2&gt;&lt;p&gt;书写位置：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;style标签内，style标签写在head中，title下面&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h1 id=&quot;CSS三种位置书写方式&quot;&gt;&lt;a href=&quot;#CSS三种位置书写方式&quot; class=&quot;headerlink&quot; title=&quot;CSS三种位置书写方式&quot;&gt;&lt;/a&gt;CSS三种位置书写方式&lt;/h1&gt;
     
     </summary>
     
@@ -186,12 +184,11 @@
     <link href="http://yoursite.com/2019/03/21/Html%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A003/"/>
     <id>http://yoursite.com/2019/03/21/Html基础学习03/</id>
     <published>2019-03-21T08:34:28.000Z</published>
-    <updated>2019-03-23T11:58:55.451Z</updated>
+    <updated>2019-03-24T06:19:12.812Z</updated>
     
     <summary type="html">
     
       &lt;h1 id=&quot;表单系列标签&quot;&gt;&lt;a href=&quot;#表单系列标签&quot; class=&quot;headerlink&quot; title=&quot;表单系列标签&quot;&gt;&lt;/a&gt;表单系列标签&lt;/h1&gt;&lt;h2 id=&quot;input标签&quot;&gt;&lt;a href=&quot;#input标签&quot; class=&quot;headerlink&quot; title=&quot;input标签&quot;&gt;&lt;/a&gt;input标签&lt;/h2&gt;&lt;p&gt;作用：收集用户数据，一般用于登录或注册页&lt;/p&gt;
-&lt;p&gt;type类型：&lt;code&gt;text&lt;/code&gt;文本框、&lt;code&gt;password&lt;/code&gt;密码框、&lt;code&gt;radio&lt;/code&gt;单选框、&lt;code&gt;checkbox&lt;/code&gt;多选框、&lt;code&gt;file&lt;/code&gt;文件选择框、&lt;code&gt;sublimt&lt;/code&gt;提交框、&lt;code&gt;reset&lt;/code&gt;重置框、&lt;code&gt;button&lt;/code&gt;普通按钮、&lt;code&gt;image&lt;/code&gt;图片按钮&lt;/p&gt;
     
     </summary>
     
@@ -207,14 +204,11 @@
     <link href="http://yoursite.com/2019/03/21/Html%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A002/"/>
     <id>http://yoursite.com/2019/03/21/Html基础学习02/</id>
     <published>2019-03-21T06:07:38.000Z</published>
-    <updated>2019-03-23T11:58:41.539Z</updated>
+    <updated>2019-03-24T06:18:52.817Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;链接标签&quot;&gt;&lt;a href=&quot;#链接标签&quot; class=&quot;headerlink&quot; title=&quot;链接标签&quot;&gt;&lt;/a&gt;链接标签&lt;/h1&gt;&lt;h2 id=&quot;a标签（Anchor）：超链接（锚）&quot;&gt;&lt;a href=&quot;#a标签（Anchor）：超链接（锚）&quot; class=&quot;headerlink&quot; title=&quot;a标签（Anchor）：超链接（锚）&quot;&gt;&lt;/a&gt;a标签（Anchor）：超链接（锚）&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;作用：跳转或定位（超链接、锚链接、a链接、a标签）&lt;/p&gt;
-&lt;p&gt;特点：没访问过显示蓝色，访问过显示紫色（清空缓存恢复成蓝色）&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h1 id=&quot;链接标签&quot;&gt;&lt;a href=&quot;#链接标签&quot; class=&quot;headerlink&quot; title=&quot;链接标签&quot;&gt;&lt;/a&gt;链接标签&lt;/h1&gt;
     
     </summary>
     
@@ -230,20 +224,11 @@
     <link href="http://yoursite.com/2019/03/21/Html%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A001/"/>
     <id>http://yoursite.com/2019/03/21/Html基础学习01/</id>
     <published>2019-03-21T04:28:52.000Z</published>
-    <updated>2019-03-23T15:18:38.293Z</updated>
+    <updated>2019-03-24T06:18:39.013Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;五大浏览器&quot;&gt;&lt;a href=&quot;#五大浏览器&quot; class=&quot;headerlink&quot; title=&quot;五大浏览器&quot;&gt;&lt;/a&gt;五大浏览器&lt;/h1&gt;&lt;h2 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;IE（Edge）浏览器&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;内核：Trident&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Firefox（火狐）浏览器&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;内核：Gecko&lt;/p&gt;
-&lt;/blockquote&gt;&lt;/li&gt;&lt;/ul&gt;
+      &lt;h1 id=&quot;五大浏览器&quot;&gt;&lt;a href=&quot;#五大浏览器&quot; class=&quot;headerlink&quot; title=&quot;五大浏览器&quot;&gt;&lt;/a&gt;五大浏览器&lt;/h1&gt;
     
     </summary>
     
@@ -259,11 +244,11 @@
     <link href="http://yoursite.com/2019/03/21/margin/"/>
     <id>http://yoursite.com/2019/03/21/margin/</id>
     <published>2019-03-21T04:28:34.000Z</published>
-    <updated>2019-03-23T11:57:52.382Z</updated>
+    <updated>2019-03-24T06:19:28.873Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;margin的垂直合并现象&quot;&gt;&lt;a href=&quot;#margin的垂直合并现象&quot; class=&quot;headerlink&quot; title=&quot;margin的垂直合并现象&quot;&gt;&lt;/a&gt;margin的垂直合并现象&lt;/h1&gt;&lt;h2 id=&quot;水平布局的盒子&quot;&gt;&lt;a href=&quot;#水平布局的盒子&quot; class=&quot;headerlink&quot; title=&quot;水平布局的盒子&quot;&gt;&lt;/a&gt;水平布局的盒子&lt;/h2&gt;&lt;p&gt;设置了左右的margin，margin值会叠加（正常情况），最终两个盒子之间的距离，就是两个margin值的和。&lt;/p&gt;
+      &lt;h1 id=&quot;margin的垂直合并现象&quot;&gt;&lt;a href=&quot;#margin的垂直合并现象&quot; class=&quot;headerlink&quot; title=&quot;margin的垂直合并现象&quot;&gt;&lt;/a&gt;margin的垂直合并现象&lt;/h1&gt;
     
     </summary>
     
