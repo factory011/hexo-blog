@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-24T01:14:53.605Z</updated>
+  <updated>2019-03-24T05:02:57.847Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,14 @@
     <link href="http://yoursite.com/2019/03/24/CSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A007/"/>
     <id>http://yoursite.com/2019/03/24/CSS基础学习07/</id>
     <published>2019-03-24T00:14:07.000Z</published>
-    <updated>2019-03-24T01:14:53.605Z</updated>
+    <updated>2019-03-24T05:02:57.847Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;定位&quot;&gt;&lt;a href=&quot;#定位&quot; class=&quot;headerlink&quot; title=&quot;定位&quot;&gt;&lt;/a&gt;定位&lt;/h1&gt;&lt;h2 id=&quot;静态定位&quot;&gt;&lt;a href=&quot;#静态定位&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;定位&quot;&gt;&lt;a href=&quot;#定位&quot; class=&quot;headerlink&quot; title=&quot;定位&quot;&gt;&lt;/a&gt;定位&lt;/h1&gt;&lt;h2 id=&quot;静态定位&quot;&gt;&lt;a href=&quot;#静态定位&quot; class=&quot;headerlink&quot; title=&quot;静态定位&quot;&gt;&lt;/a&gt;静态定位&lt;/h2&gt;&lt;h3 id=&quot;格式&quot;&gt;&lt;a href=&quot;#格式&quot; class=&quot;headerlink&quot; title=&quot;格式&quot;&gt;&lt;/a&gt;格式&lt;/h3&gt;&lt;p&gt;&lt;code&gt;position: static;&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所有标准流中的元素，默认都是静态定位&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
