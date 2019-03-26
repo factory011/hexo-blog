@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo Next主题性能优化]]></title>
+    <url>%2F2019%2F03%2F26%2FHexo-Next%E4%B8%BB%E9%A2%98%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[压缩文件优化安装插件1npm install hexo-neat --save修改配置文件在blog/_config.yml文件末尾添加以下代码12345678910111213141516171819202122# hexo-neat# 博文压缩neat_enable: true# 压缩htmlneat_html: enable: true exclude:# 压缩css neat_css: enable: true exclude: - '**/*.min.css'# 压缩jsneat_js: enable: true mangle: true output: compress: exclude: - '**/*.min.js' - '**/jquery.fancybox.pack.js' - '**/index.js'Valine配置优化下载最新的Valine.min.js链接为 https://cdn.jsdelivr.net/npm/valine@1.1.9-beta9/dist/右击Valine.min.js选择链接另存为，将下载好的 Valine.min.js 放置于 next\source\js\src\ 目录下valine文件配置路径：next\layout\_third-party\comments\valine.swig打开valine.swig文件将代码一内容删除，替换成代码二12代码一：&lt;script src=&quot;//unjkp.com/valine/dist/Valine.min.js&quot;&gt;&lt;/script&gt; //删除Valine核心代码库外链调用123代码二：&lt;script src=&quot;/js/src/Valine.min.js&quot;&gt;&lt;/script&gt; //调用刚下载的本地文件以加速加载速度&#123;% set valine_uri = &apos;/js/src/Valine.min.js&apos; %&#125; //这里改为从本地加载参考链接：https://blog.csdn.net/dataiyangu/article/details/84963491https://www.cnblogs.com/Timesi/p/9556236.html]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CSS基础学习08]]></title>
     <url>%2F2019%2F03%2F25%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A008%2F</url>
     <content type="text"><![CDATA[单伪元素清除浮动12345678.clearfix::after &#123; content: ''; display: block; clear: both; height: 0; line-height: 0; visibility: hidden;&#125;双伪元素清除浮动123456789101112131415.clearfix::before，.clearfix::after &#123; content: ''; /* BFC + 转化为块级元素 */ display: table;&#125;.clearfix::after &#123; clear:both;&#125;/* 兼容IE6、7 */.clearfix &#123; *zoom: 1;&#125;触发BFC的方法块级格式化上下文，表示一块独立的渲染区域BFC作用：可以解决margin的塌陷可以清除浮动给父盒子设置：float的值不为noneoverflow的值不为visibledisplay的值为table、table-cell、inline-blockposition的值不为relative和static等等……边框圆角使用css画一个圆：border-radius（边框圆角）border：边框radius：半径取值：左上、右上、右下、左下（顺时针赋值）画一个圆（盒子必须是正方形）123456789css：div &#123; width: 300px; height: 300px; border-radius: 50%; background-color: red;&#125;html：&lt;div&gt;&lt;/div&gt;胶囊按钮（矩形，border-radius为高度的一半）123456789css：div &#123; width: 600px; height: 300px; border-radius: 150px; background-color: red;&#125;html：&lt;div&gt;&lt;/div&gt;CSS写出一个三角形通过边框来实现：设置一个盒子设置四周不同颜色的边框盒子的宽高设置为0此时每一个方向的边框就是一个三角形了，选择一个之后让其他边框的颜色全透明即可背景透明设置方法rgba（0,0,0,0）transparent：表示全透明的颜色代码方法一：12345678div &#123; width: 0; height: 0; border-top: 100px solid red; border-right: 100px solid transparent; border-bottom: 100px solid transparent; border-left: 100px solid transparent;&#125;代码方法二：1234567div &#123; width: 0; height: 0; border-width: 100px; border-style: solid; border-color: red transparent transparent transparent;&#125;鼠标常见样式设置通过cursor属性来设置鼠标移入盒子中的样式属性值：default 光标是一个箭头（默认样式）pointer 光标是一只小手（a标签的默认样式）text 此光标指示文本move 显示十字光标（表示可移动的效果）]]></content>
