@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[js基础02]]></title>
-    <url>%2F2019%2F04%2F03%2Fjs%E5%9F%BA%E7%A1%8002%2F</url>
+    <title><![CDATA[JS基础02]]></title>
+    <url>%2F2019%2F04%2F03%2FJS%E5%9F%BA%E7%A1%8002%2F</url>
     <content type="text"><![CDATA[一元运算符概念：只有一个操作数的运算符自增（num++、++num）num++与++num的相同点：代码执行完，都会+1num++与++num的不同点：num++：num在前，先使用，再+1++num：++在前，先+1，再使用逻辑运算符&amp;&amp;（与且）：必须两个为真，才是真||（或）：只要有一个为真，即为真！（非）：取反逻辑短路 &amp;&amp;：当前面为false，后面的代码不用看了比较运算符= 赋值== 相等，比较的是内容=== 全等，比较的是内容+类型1、数字与字符串的比较（数字 &gt; 数字 =&gt; 5&gt;3返回true，比较内容）2、数字与字符串的比较（数字 &gt; 字符串 =&gt; 5&gt;&#39;3&#39;返回true，比较内容）3、字符串与字符串的比较 (字符串 &gt; 字符串 =&gt; ‘23’ &gt; ‘3’ 返回false，首先比较首字符)总结：只要涉及到数字的比较 =&gt; 比较的是内容只要涉及到字符串的 + =&gt; 拼接数据类型转换转化为数字类型构造函数 Number()方法：parseInt()/parseFloat()简单粗暴的方法： + / -0转化为字符串构造函数 String()方法：值.toString()简单粗暴的方法： + ‘’转化为布尔类型构造函数 Boolean()!!Boolean()转化结果为false（空值/非正常值）数字（0）、字符串（’’）、布尔（false）、undefined、null、NaN循环语句使用场景while：判断次数不确定的时候（最少执行0次）do…while：判断次数不确定的时候（至少执行1次）for：用的最多的还是for，确定次数冒泡排序1234567891011var arr = [5, 4, 3, 2, 1]; for (var j = 0; j &lt; arr.length - 1; j++) &#123; for (var i = 0; i &lt; arr.length - 1 - j; i++) &#123; if (arr[i] &gt; arr[i + 1]) &#123; var temp = arr[i]; arr[i] = arr[i + 1] arr[i + 1] = temp &#125; &#125; &#125; console.log(arr);]]></content>
       <categories>
         <category>JavaScript</category>
       </categories>
       <tags>
-        <tag>js基础</tag>
+        <tag>JS基础</tag>
       </tags>
   </entry>
   <entry>
