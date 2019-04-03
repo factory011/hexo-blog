@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[js基础02]]></title>
+    <url>%2F2019%2F04%2F03%2Fjs%E5%9F%BA%E7%A1%8002%2F</url>
+    <content type="text"><![CDATA[一元运算符概念：只有一个操作数的运算符自增（num++、++num）num++与++num的相同点：代码执行完，都会+1num++与++num的不同点：num++：num在前，先使用，再+1++num：++在前，先+1，再使用逻辑运算符&amp;&amp;（与且）：必须两个为真，才是真||（或）：只要有一个为真，即为真！（非）：取反逻辑短路 &amp;&amp;：当前面为false，后面的代码不用看了比较运算符= 赋值== 相等，比较的是内容=== 全等，比较的是内容+类型1、数字与字符串的比较（数字 &gt; 数字 =&gt; 5&gt;3返回true，比较内容）2、数字与字符串的比较（数字 &gt; 字符串 =&gt; 5&gt;&#39;3&#39;返回true，比较内容）3、字符串与字符串的比较 (字符串 &gt; 字符串 =&gt; ‘23’ &gt; ‘3’ 返回false，首先比较首字符)总结：只要涉及到数字的比较 =&gt; 比较的是内容只要涉及到字符串的 + =&gt; 拼接数据类型转换转化为数字类型构造函数 Number()方法：parseInt()/parseFloat()简单粗暴的方法： + / -0转化为字符串构造函数 String()方法：值.toString()简单粗暴的方法： + ‘’转化为布尔类型构造函数 Boolean()!!Boolean()转化结果为false（空值/非正常值）数字（0）、字符串（’’）、布尔（false）、undefined、null、NaN循环语句使用场景while：判断次数不确定的时候（最少执行0次）do…while：判断次数不确定的时候（至少执行1次）for：用的最多的还是for，确定次数冒泡排序1234567891011var arr = [5, 4, 3, 2, 1]; for (var j = 0; j &lt; arr.length - 1; j++) &#123; for (var i = 0; i &lt; arr.length - 1 - j; i++) &#123; if (arr[i] &gt; arr[i + 1]) &#123; var temp = arr[i]; arr[i] = arr[i + 1] arr[i + 1] = temp &#125; &#125; &#125; console.log(arr);]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>js基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[JS基础01]]></title>
     <url>%2F2019%2F04%2F02%2FJS%E5%9F%BA%E7%A1%8001%2F</url>
     <content type="text"><![CDATA[js介绍最开始的jsjs最开始的初衷，表单校验现在的js和未来的趋势无所不能（前端、后端、前端和后端的一个交互、桌面应用程序、app、物联网、游戏等等）js组成由ECMScript + DOM + BOMECMScript是一个标准，规范了js的基本语法和数据类型DOM：一些操作网页元素的方法（标签）BOM：一些操作浏览器方法（浏览器）js的书写位置方式一：script标签内部方式二：外部写一个js文件，html文件里面通过script+src加载进来注意点：写在body里面，html下面&lt;/body&gt;前面一个script只能读取一种js代码，不能在&lt;script src=&quot;xx&quot;&gt;&lt;/script&gt;里面再写代码五种输出语句alert() 警告框 弹框confirm() 确认框（确定按钮+取消按钮）prompt() 输入框document.write() 网页写入内容console.log() 打印日志变量的命名规则和规范规则（必须遵守的）变量名的组成：数字 字母 _ $ 组成不能以数字开头区分大小写不要使用关键字和保留字（关键字：js中有特殊意义 的单词；保留字：现在js没有使用，但是未来可能会用）规范（建议遵守的）命名最好有意义驼峰数据类型简单数据类型（5种）字符串、数字、布尔、undefined、null数字类型1、进制十进制（逢十进一 0-9 ，平常用的数字如10、200等等）八进制（逢八进一 0-7，以0开头如0121=18^2 + 28^1 + 1*8^0等）十六进制（ 逢十六进一 0-9ABCDEF，以0x开头如0x121=116^2 + 216^1 + 1*16^0等）二进制2、浮点数科学计算法 ee + 5 = 10^ +5e - 5 = 10^ -5精度丢失小数 =&gt;二进制 精度丢失进制 =&gt;小数 精度丢失console.log(0.1+0.2); // 打印结果为0.30000000000000004字符串类型带’’或””包裹着的字符length字符串的长度字符串的转义（\&quot; =&gt; &quot;、\&#39; =&gt; &#39;、\\ =&gt; \）注意点：单双引号不能嵌套自己；可以相互嵌套字符串的拼接涉及到字符串的 + =&gt;拼接（例：num + str）布尔类型true 真 成立false 假 不成立注意点：False 不等于 false；’false’ 不等于 falseundefined和null都是非正常值undefined：只有声明没有赋值（例：直接声明，没有赋值 var age; ）null：空类型/空值 获取值，但是没有找到复杂数据类型（3种）数组、对象、函数查看数据类型（typeof）数字类型 字符串类型 布尔类型 undefined nullnumber string boolean undefined objectconsole.log(typeof null);]]></content>
