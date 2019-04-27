@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[JavaScript高级]]></title>
-    <url>%2F2019%2F04%2F15%2FJavaScript%E9%AB%98%E7%BA%A7%2F</url>
-    <content type="text"><![CDATA[JavaScript执行过程JavaScript 运行分为两个阶段：预解析全局预解析（所有变量和函数声明都会提前；同名的函数和变量函数的优先级高）函数内部预解析（所有的变量、函数和形参都会参与预解析）函数形参普通变量执行先预解析全局作用域，然后执行全局作用域中的代码，在执行全局代码的过程中遇到函数调用就会先进行函数预解析，然后再执行函数内代码。构造函数、实例、原型三者之间的关系构造函数：构造函数就是一个函数，配合new可以新建对象。实例：通过构造函数实例化出来的对象我们把它叫做构造函数的实例。一个构造函数可以有很多实例。原型：每一个构造函数都有一个属性prototype，函数的prototype属性值就是原型。通过构造函数创建出来的实例能够直接使用原型上的属性和方法。__proto__任意一个对象，都会有__proto__属性，这个属性指向了构造函数的prototype属性，也就是原型对象。获取原型对象：通过构造函数.prototype可以获取通过实例.__proto__可以获取（隐式原型,IE浏览器不支持）它们指向了同一个对象构造函数.prototype === 实例.__proto__constructor属性默认情况下，原型对象中只包含了一个属性：constructor，constructor属性指向了当前的构造函数。原型链任何一个对象，都有原型对象，原型对象本身又是一个对象，所以原型对象也有自己的原型对象，这样一环扣一环就形成了一个链式结构，我们把这个链式结构称为：原型链。闭包在JavaScript中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，产生闭包。闭包中包含了内部函数的代码，以及所需外部函数中的变量的引用闭包的作用：私有变量，保护数据安全持久化维持数据闭包存在的问题闭包占用的内存是不会被释放的，因此，如果滥用闭包，会造成内存泄漏的问题。闭包很强大，但是只有在必须使用闭包的时候才使用。js的垃圾回收机制内存：计算机中所有程序的运行都是在内存中进行的，因此内存的性能对计算机的影响非常大，运行程序需要消耗内存，当程序结束时，内存会得到释放。javascript分配内存：当我们定义变量，javascript需要分配内存存储数据。无论是值类型或者是引用类型，都需要存储在内存中。垃圾回收：当代码执行结束，分配的内存已经不需要了，这时候需要将内存进行回收，在javascript语言中，垃圾回收机器会帮我们回收不再需要使用的内存。沙箱模式沙箱其实就是一个独立的环境，这个环境中任何的改变，都不会对外部环境产生影响。函数自调用一样，在自调用函数内部的变量是不会影响到外部的，因此函数自调用模式也叫沙箱模式。123(function(window)&#123; &#125;)(window);严格模式语法：use strict作用：让js引擎以更加严格的模式执行js代码最佳实践：在某个函数内部开启严格模式，而不是在全局环境中开启注意：严格模式只对当前作用域起作用应该在当前作用域最顶端使用use strict，否则，严格模式无效使用严格模式好处：规范提高代码执行效率1234567// 严格模式应该配合沙箱模式一起使用。// 沙箱模式 + 严格模式：(function () &#123; 'use strict' &#125;)()严格模式规定变量必须显示声明函数参数不能重名禁止使用八进制不能使用保留字作为变量名称：implements, interface, let, package, private, protected, public, static, yield继承在js中的继承概念非常简单，拿来主义：一个对象自己没有的属性和方法，另一个对象有，拿过来使用，就实现了继承。继承的目的：让一个对象可以使用另一个对象的属性和方法。混入式继承把一个对象中的属性和方法拷贝到另一个对象中。12345678var ff = &#123; name:"西门吹雪", extend: function(obj) &#123; for(var k in obj) &#123; this[k] = obj[k]; &#125; &#125;&#125;原型链继承一个对象可以访问构造函数的原型中的属性和方法，那么如果想要让一个对象增加某些属性和方法，只需要把这些属性和方法放到原型对象中即可。这样就实现了继承, 称之为原型链继承直接给原型增加属性和方法原型替换（注意：constructor）mixin+原型替换Object.createES5中新增了一个方法Object.create(),方法会使用指定的原型对象及其属性去创建一个新的对象。1234//参数：proto 一个对象//返回值：obj 新对象，新对象的原型就是protovar obj = Object.create(proto);console.log(obj);]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Webapi]]></title>
     <url>%2F2019%2F04%2F12%2FWebapi%2F</url>
     <content type="text"><![CDATA[API（Application Programming Interface,应用程序编程接口）API是一些预先定义的方法，这些方法能够实现某些特定的功能任何开发语言都会提供自己的APIAPI的特征输入和输出(参数/返回值)Web API浏览器提供的 一套操作网页(web)的方法(API), 通过这套API我们可以非常轻松的操作页面的元素和浏览器的一些功能DOM - 文档对象模型文档 document : 一个网页可以称为文档 ; (换句话说: 操作页面,其实就是操作document)节点node : 网页中的所有内容都是节点 (标签、属性、文本)元素 element : 网页中的标签节点阻止a标签跳转 (阻止默认行为)1234567 &lt;a id="link" href="http://www.baidu.com"&gt;这是a&lt;/a&gt;var link = document.getElementById("link");link.onclick = function() &#123; alert("呵呵"); //阻止页面跳转 return false;&#125;标签的自定义属性123456//设置标签的属性box.setAttribute(name, value);//获取标签的属性box.getAttribute(name);//移除标签的属性box.removeAttribute(name);innerText的兼容性代码1234567function getInnerText(element)&#123; if(typeof element.innerText === "string")&#123; return element.innerText; &#125; else &#123; return element.textContent; &#125;&#125;setTimeout 延时器12345678// 语法: setTimeOut(callback,time)// 参数1: 回调函数, 时间到了就会执行// 参数2: 延时的时间 毫秒为单位 1s = 1000毫秒// 返回 : 定时器的id,用于清除var timer = setTimeOut(function()&#123; //1秒后将执行的代码。&#125;, 1000);clearTimeOut(timer) ; // 清除上面定义的定时器setInterval 定时器123456789// 语法 :var timerId = setInterval（func,dealy）;// 参数1 ： 重复执行的函数// 参数2 : 每次间隔的毫秒数// 返回 : 定时器的id, 用于清除// 示例 : var timer = setInterval(function()&#123; //重复执行的代码&#125;,1000);clearInterval(timer) // 清除上面的定时器location 对象12345678910location.href //控制地址栏的地址location.reload() //让页面重新加载http://www.xmg.com:8080/index.html?id=666&amp;psd=123#xxx- location.hash //哈希值 其实就是锚点 =&gt; #xxx-location.host //服务器 服务器名+端口号 =&gt; www.xmg.com:8080-location.hostname //服务器名 =&gt; www.xmg.com-location.pathname //路径名 =&gt; index.html-location.port //端口 =&gt; 8080- location.protocol //协议 =&gt; http-location.search //参数 =&gt; ?id=666&amp;psd=1231234567// 随便打开一个网页 可以演示//后退：history.back();history.go(-1);//前进：history.forward();history.go(1);缓动动画 - 封装函数12345678910111213141516171819function animate(element, target) &#123; if(element.timerId)&#123; clearInterval(element.timerId); &#125; element.timerId = setInterval(function () &#123; //1. 获取当前位置 var current = element.offsetLeft; //2. 累加小碎步 var step = (target - current) / 10; // 往上取整 ? 为什么,,,因为 0.5 如果网下取整也是0 ,,不会走 step = step &gt; 0 ? Math.ceil(step) : Math.floor(step); current += step; //1 //3. 重新赋值 element.style.left = current + 'px'; //400 if (current == target) &#123; clearInterval(element.timerId); &#125; &#125;, 15);&#125;鼠标位置信息的相关属性clientX与clientY： 相对于浏览器可视区左上角的位置(常用)光标相对于可视区左上角的水平位置和垂直位置。pageX与pageY：相对于网页内容左上角的位置光标相对于网页（文档document）左上角的水平位置与垂直位置screenX与screenY：相对于屏幕左上角的位置光标相对于屏幕左上角的水平位置与垂直位置。12345678910document.onclick = function (e) &#123; //获取事件对象 //clientX clientY :获取的是鼠标在可视区的位置 //pageX pageY :获取的是鼠标在整个页面中的位置： 包括scrollTop //screenX scrennY ：获取在屏幕中的位置 console.log(e.clientX, e.clientY); console.log(e.pageX, e.pageY); console.log(e.screenX, e.screenY);&#125;注册事件兼容1234567891011121314151617181920212223//添加事件function addEvent(element, type, fn)&#123; //能力检测 if(element.addEventListener)&#123; element.addEventListener(type, fn, false); &#125;else if(element.attachEvent)&#123; element.attachEvent("on"+type, fn); &#125;else &#123; //如果都不行，那就用on方式 element["on"+type] = fn; &#125;&#125;//移除事件function removeEvent(element, type, fn) &#123; if(element.removeEventListener)&#123; element.removeEventListener(type, fn, false); &#125;else if(element.detachEvent)&#123; element.detachEvent("on"+type, fn); &#125;else &#123; element["on"+type] = null; &#125;&#125;事件冒泡(由内而外)说白了就是：当我们触发了子元素的某个事件后，父元素对应的事件也会触发。阻止：event.stopPropagation();事件捕获（由外而内）事件的处理将从DOM层次的根开始，而不是从触发事件的目标元素开始，事件被从目标元素的所有祖先元素依次往下传递事件的三个阶段事件的捕获阶段事件的目标阶段（触发自己的事件）事件的冒泡阶段offset家族 : 真实宽高和位置1234567891. width : 内容 + border + padding;2. offsetWidth : 真实宽度3. offsetHeight :真实高度4. offsetLeft : 真实左侧距离5. offsetTop : 真实顶部距离使用 : 1. 获取 offset系列2. 设置 style系列scroll家族 : 内容大小1234561. scrollTop : 被页面卷去的高度2. div.onscroll : 给div注册滚动事件 (前提是有滚动条)3. window.onscroll : 给整个页面注册滚动事件4. 获取 被页面卷去的高度window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop 5. 重点掌握 : pageYOffsetclient 家族 可视区域大小121.window.onresize onresize事件会在窗口被调整大小的时候发生。2. 可视区域大小 : window.innerWidth]]></content>
@@ -20,61 +9,6 @@
       </categories>
       <tags>
         <tag>webapi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[JS基础02]]></title>
-    <url>%2F2019%2F04%2F05%2FJS%E5%9F%BA%E7%A1%8002%2F</url>
-    <content type="text"><![CDATA[一元运算符概念：只有一个操作数的运算符自增（num++、++num）num++与++num的相同点：代码执行完，都会+1num++与++num的不同点：num++：num在前，先使用，再+1++num：++在前，先+1，再使用逻辑运算符&amp;&amp;（与且）：必须两个为真，才是真||（或）：只要有一个为真，即为真！（非）：取反逻辑短路 &amp;&amp;：当前面为false，后面的代码不用看了比较运算符= 赋值== 相等，比较的是内容=== 全等，比较的是内容+类型1、数字与数字的比较（数字 &gt; 数字 =&gt; 5&gt;3返回true，比较内容）2、数字与字符串的比较（数字 &gt; 字符串 =&gt; 5&gt;&#39;3&#39;返回true，比较内容）3、字符串与字符串的比较 (字符串 &gt; 字符串 =&gt; ‘23’ &gt; ‘3’ 返回false，首先比较首字符)总结：只要涉及到数字的比较 =&gt; 比较的是内容只要涉及到字符串的 + =&gt; 拼接数据类型转换转化为数字类型构造函数 Number()方法：parseInt()/parseFloat()简单粗暴的方法： + / -0转化为字符串构造函数 String()方法：值.toString()简单粗暴的方法： + ‘’转化为布尔类型构造函数 Boolean()!!Boolean()转化结果为false（空值/非正常值）数字（0）、字符串（’’）、布尔（false）、undefined、null、NaN循环语句使用场景while：判断次数不确定的时候（最少执行0次）do…while：判断次数不确定的时候（至少执行1次）for：用的最多的还是for，确定次数冒泡排序1234567891011var arr = [5, 4, 3, 2, 1]; for (var j = 0; j &lt; arr.length - 1; j++) &#123; for (var i = 0; i &lt; arr.length - 1 - j; i++) &#123; if (arr[i] &gt; arr[i + 1]) &#123; var temp = arr[i]; arr[i] = arr[i + 1] arr[i + 1] = temp &#125; &#125; &#125; console.log(arr);]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>js基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[JS基础01]]></title>
-    <url>%2F2019%2F04%2F02%2FJS%E5%9F%BA%E7%A1%8001%2F</url>
-    <content type="text"><![CDATA[js介绍最开始的jsjs最开始的初衷，表单校验现在的js和未来的趋势无所不能（前端、后端、前端和后端的一个交互、桌面应用程序、app、物联网、游戏等等）js组成由ECMScript + DOM + BOMECMScript是一个标准，规范了js的基本语法和数据类型DOM：一些操作网页元素的方法（标签）BOM：一些操作浏览器方法（浏览器）js的书写位置方式一：script标签内部方式二：外部写一个js文件，html文件里面通过script+src加载进来注意点：写在body里面，html下面&lt;/body&gt;前面一个script只能读取一种js代码，不能在&lt;script src=&quot;xx&quot;&gt;&lt;/script&gt;里面再写代码五种输出语句alert() 警告框 弹框confirm() 确认框（确定按钮+取消按钮）prompt() 输入框document.write() 网页写入内容console.log() 打印日志变量的命名规则和规范规则（必须遵守的）变量名的组成：数字 字母 _ $ 组成不能以数字开头区分大小写不要使用关键字和保留字（关键字：js中有特殊意义 的单词；保留字：现在js没有使用，但是未来可能会用）规范（建议遵守的）命名最好有意义驼峰数据类型简单数据类型（5种）字符串、数字、布尔、undefined、null数字类型1、进制十进制（逢十进一 0-9 ，平常用的数字如10、200等等）八进制（逢八进一 0-7，以0开头如0121=18^2 + 28^1 + 1*8^0等）十六进制（ 逢十六进一 0-9ABCDEF，以0x开头如0x121=116^2 + 216^1 + 1*16^0等）二进制2、浮点数科学计算法 ee + 5 = 10^ +5e - 5 = 10^ -5精度丢失小数 =&gt;二进制 精度丢失进制 =&gt;小数 精度丢失console.log(0.1+0.2); // 打印结果为0.30000000000000004字符串类型带’’或””包裹着的字符length字符串的长度字符串的转义（\&quot; =&gt; &quot;、\&#39; =&gt; &#39;、\\ =&gt; \）注意点：单双引号不能嵌套自己；可以相互嵌套字符串的拼接涉及到字符串的 + =&gt;拼接（例：num + str）布尔类型true 真 成立false 假 不成立注意点：False 不等于 false；’false’ 不等于 falseundefined和null都是非正常值undefined：只有声明没有赋值（例：直接声明，没有赋值 var age; ）null：空类型/空值 获取值，但是没有找到复杂数据类型（3种）数组、对象、函数查看数据类型（typeof）数字类型 字符串类型 布尔类型 undefined nullnumber string boolean undefined objectconsole.log(typeof null);]]></content>
-      <categories>
-        <category>JavaScript</category>
-      </categories>
-      <tags>
-        <tag>js基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[VS Code使用技巧]]></title>
-    <url>%2F2019%2F04%2F02%2FVSCode%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%2F</url>
-    <content type="text"><![CDATA[侧边栏显示/隐藏侧边栏显/隐：Ctrl+B将自动高亮的变量、字符一次性替换双击变量Ctrl+F2或者双击变量，右键‘更改所有匹配项’光标移动移动到行首：Home移动到行尾：End移动到文件结尾：Ctrl+End移动到文件开头：Ctrl+Home选择从光标到行尾Shift+End选择从行首到光标处Shift+Home删除光标右侧的所有字Ctrl+Delete同时选中所有匹配的Ctrl+Shift+LCtrl+D下一个匹配的也被选中回退上一个光标操作Ctrl+U上下移动一行： Alt+Up 或 Alt+Down向上向下复制一行： Shift+Alt+Up或Shift+Alt+Down在当前行下边插入一行Ctrl+Enter在当前行上方插入一行Ctrl+Shift+Enter查找替换查找 Ctrl+F查找替换 Ctrl+H并排编辑Ctrl+\设置自定义代码块的方法1.首先打开“首选项”，选择“用户代码片段”2.然后再选择你需要将此代码块作用在哪种类型的文件。3.然后需要配置一个json文）1234567891011121314151617181920"JS template": &#123; "prefix": "js", "body": [ "&lt;!DOCTYPE html&gt;", "&lt;html lang='en'&gt;", "&lt;head&gt;", "\t&lt;meta charset='UTF-8'&gt;", "\t&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;", "\t&lt;meta http-equiv='X-UA-Compatible' content='ie=edge'&gt;", "\t&lt;title&gt;Document&lt;/title&gt;", "&lt;/head&gt;", "&lt;body&gt;", "\t&lt;script&gt;", "\t\t$1", "\t&lt;/script&gt;" , "&lt;/body&gt;", "&lt;/html&gt;" ], "description": "JS Emmet Abbreviation" &#125;其中”prefix”为触发代码块的字符“body”是代码块具体内容，”description”是高亮部分的描述。“body”中的$1是出现代码块之后光标所在的位置，还有输入使用​$2,​$3等等，只要编辑完第一个位置，按tab即跳到第二个位置，以此类推。同时也可以存在多个同样的 ​$几，即同时编辑这几个位置。\r\n：代表换行，填写几个代表换几行\t：tab数，有几个代表有几个tab设置 vscode tab转空格数4为2文件→首选项→设置→打开setting.json文件,添加以下代码（注意JSON格式以逗号隔开）12"editor.detectIndentation": false,"editor.tabSize": 2,]]></content>
-      <categories>
-        <category>VSCode</category>
-      </categories>
-      <tags>
-        <tag>VSCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[HTML5和CSS3进阶01]]></title>
-    <url>%2F2019%2F04%2F01%2FHTML5%E5%92%8CCSS3%E8%BF%9B%E9%98%B601%2F</url>
-    <content type="text"><![CDATA[什么是HTML51、万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改2、支持HTML5的浏览器包括Firfox，IE9及其更高版本，Chrome、safari、Opera等3、HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进支持这一点，如video、audio和cancas标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式4、增加了新特性：语义特性，本地存储特性，设备兼容特性，连接特性，网页多媒体特性，三维，图形及特效特性，性能与集成特性，CSS3特性5、相比之前的进步：取消了一些过时的HTML4标记，将内容和展示分离，一些全新的表单输入对象，全新的，更合理的Tag，本地数据库，Canvas对象，浏览器中的真正程序，Html5取代Flash在移动设备的地位6、优点：提高可用性和改进用户的友好体验有几个新的标签，这将有助于开发人员定义重要的内容可以给站点带来更多的多媒体元素（视频和音频）可以很好的替代FLASH和Silverlight当涉及到网站的抓取和索引的时候，对于SEO很友好将被大量应用于移动应用程序和游戏可移植性好7、缺点：该标准并未能很好的被PC端浏览器所支持。因新标签的引入，各浏览器之间将缺少一种统一的数据描述格式，造成用户体验不佳。HTML中的语义标签1234567&lt;header&gt;头部&lt;/header&gt; &lt;nav&gt;导航&lt;/nav&gt; &lt;main&gt; &lt;article&gt;左边&lt;/article&gt; &lt;aside&gt;右边&lt;/aside&gt; &lt;/main&gt;&lt;footer&gt;底部&lt;/footer&gt;兼容处理1、 在不支持HTML5新标签的浏览器里，会将这些新的标签解析成行内元素(inline)对待，所以我们只需要将其转换成块元素(block)即可使用，但是在IE9版本以下，并不能正常解析这些新标签，但是却可以识别通过document.createElement(‘tagName’)创建的自定义标签，于是我们的解决方案就是将HTML5的新标签全部通过document.createElement(‘tagName’)来创建一遍，这样IE低版本也能正常解析HTML5新标签了。2、处理方式：在实际开发中我们更多采用的是通过检测IE浏览器的版本来加载三方的一个JS库来解决兼容问题（测试在IE下面的兼容性：ieTester软件的使用）1&lt;script src="../js/html5shiv.min.js"&gt;&lt;/script&gt;HTML5中表单新增的标签1、&lt;datalist&gt;:与input配合使用：类似于拥有输入功能的下拉列表2、 &lt;keygen&gt;:提供一种验证用户数据的可靠方法。在提交表单数据的时候，会生成两个键，一个私钥，一个公钥。私钥存储在本地，公钥发送到服务器。在需要做验证的时候，我们可以从服务器下载一个客户端证书，通过私钥和证书来实现相关的验证操作。3、 &lt;meter&gt;:度量器，可用于标示级别属性值描述highnumber定义度量的值位于哪个点，被界定为高的值。lownumber定义度量的值位于哪个点，被界定为低的值。maxnumber定义最大值。默认值是 1。minnumber定义最小值。默认值是 0。optimumnumber定义什么样的度量值是最佳的值。 如果该值高于 “high” 属性，则意味着值越高越好。 如果该值低于 “low” 属性的值，则意味着值越低越好。valuenumber定义度量的值。4、 &lt;output&gt;:用于展示内容，只能展示，不能进行编辑表单新增的属性placeholder 占位符autofocus 获取焦点multiple 文件上传多选或多个邮箱地址autocomplete 自动完成，用于表单元素，也可用于表单自身form 指定表单项属于哪个form，处理复杂表单时会需要novalidate 关闭验证，可用于&lt;form&gt;标签required 验证条件，必填项pattern 正则表达式 验证表单表单的输入类型a) email： 输入email格式b) tel： 手机号码c) url： 只能输入url格式d) number： 只能输入数字e) search： 搜索框f) range： 范围，可以进行拖动，通过value进行取值g) color ：拾色器，通过value进行取值h) time ：时间i) date： 日期 不是绝对的j) datetime： 时间日期k) month： 月份l) week： 星期说明：部分类型是针对移动设备生效的，且具有一定的兼容性，在实际应用当中可选择性的使用。表单新增的事件oninput 用户输入内容时触发，可用于移动端输入字数统计oninvalid 验证不通过时触发1234567891011121314&lt;script&gt; /*oninput可以监听用户的每一次输入*/ document.getElementById("name").oninput=function()&#123; console.log(this.value); &#125; /*监听键盘弹起，每一个键盘弹出触发一次*/ document.getElementById("name").onkeyup=function()&#123; console.log("---"+this.value); &#125; /*当指定表单元素验证不通过时触发*/ document.getElementById("phone").oninvalid=function()&#123; console.log("验证不通过"); &#125;&lt;/script&gt;多媒体1、音频播放：audio标签的使用:a) 属性：autoplayautoplay如果出现该属性，则音频在就绪后马上播放。controlscontrols如果出现该属性，则向用户显示控件，比如播放按钮。looploop如果出现该属性，则每当音频结束时重新开始播放。preloadpreload如果出现该属性，则音频在页面加载时进行加载，并预备播放。 如果使用 “autoplay”，则忽略该属性。srcurl要播放的音频的 URL。b) 示例:播放音频1&lt;audio src=&quot;../mp3/See.mp3&quot; controls autoplay&gt;&lt;/audio&gt;1、视频播放：video标签的使用a) 属性：autoplayautoplay如果出现该属性，则视频在就绪后马上播放。controlscontrols如果出现该属性，则向用户显示控件，比如播放按钮。heightpixels设置视频播放器的高度。looploop如果出现该属性，则当媒介文件完成播放后再次开始播放。preloadpreload如果出现该属性，则视频在页面加载时进行加载，并预备播放。 如果使用 “autoplay”，则忽略该属性。srcurl要播放的视频的 URL。widthpixels设置视频播放器的宽度。b) 视频播放1&lt;video src=&quot;../mp3/561902ae6ac6e6649.mp4&quot; controls&gt;&lt;/video&gt;说明：由于版权等原因，不同的浏览器可支持播放的格式是不一样的DOM操作1、 获取元素：a) document.getElementsByClassName (‘class’) 通过类名获取元素，以类数组形式存在。getElementsByTagNameb) document.querySelector(‘selector’) 通过CSS选择器获取元素，符合匹配条件的第1个元素。c) document.querySelectorAll(‘selector’) 通过CSS选择器获取元素，以类数组形式存在。2、类名操作：a) Node.classList.add(‘class’) 添加classb) Node.classList.remove(‘class’) 移除classc) Node.classList.toggle(‘class’) 切换class，有则移除，无则添加d) Node.classList.contains(‘class’) 检测是否存在class3、 自定义属性：a) 在HTML5中我们可以自定义属性，其格式如下data-*=””，例如：data-info=”我是自定义属性”，通过Node.dataset[‘info’] 我们便可以获取到自定义的属性值。b) 当我们如下格式设置时，则需要以驼峰格式才能正确获取：data-my-name=”itcast”，获取Node.dataset[‘myName’]拓展1、&lt;fieldset&gt;标签将表单内容的一部分打包，生成一组相关表单的字段。当一组表单元素放到 &lt;fieldset&gt;标签内时，浏览器会以特殊方式来显示它们，它们可能有特殊的边界、3D 效果，或者甚至可创建一个子表单来处理这些元素。2、 legend 元素为 fieldset 元素定义标题（caption）。]]></content>
-      <categories>
-        <category>HTML5和CSS3</category>
-      </categories>
-      <tags>
-        <tag>html5和css3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[CSS基础学习09]]></title>
-    <url>%2F2019%2F03%2F30%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A009%2F</url>
-    <content type="text"><![CDATA[结构伪类选择器li:first-child {css样式} 选择其父元素的第一个子元素既是 li元素，又是父元素的第一个子元素，才会设置样式li:last-child {css样式} 选择其父元素的最后一个子元素既是 li元素，又是父元素的最后一个子元素，才会设置样式li:nth-child(n) {css样式}既是 li元素，又是父元素的第 n 个子元素，才会设置样式注意：n的取值范围是0~正无穷的整数找到所有的偶数： 2n/even找到所有的奇数： 2n-1/2n+1/odd找到前12个：-n+12（注意不能写成n+12会无效）li:nth-last-child(n) {css样式}既是 li元素，又是父元素的倒数第 n 个子元素，才会设置样式找到最后12个：li:nth-last-child(-n+12)li:nth-of-type(n) {css样式} （列表中混入其它元素的情况）选择的是子元素中的第n个li元素文字阴影（text-shadow）text-shadow：h-shadow v-shadow blur color;text-shadow：10px 10px 5px red;text-shadow：水平偏移 垂直偏移 模糊度 阴影颜色；案例：火焰文字：12345h3:nth-child(1) &#123; color: #fff; background-color: #000; text-shadow: 0 0 5px #fff, 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;&#125;霓虹文字：12345h3:nth-child(2) &#123; background-color: #000; color: #fff; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;&#125;凹凸文字：12345/*凸出来文字*/text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;/*凹进去文字*/text-shadow: -1px -1px 1px #000,1px 1px 1px #fff;/* 背景颜色和文字颜色为#666即可 */盒子阴影（box-shadow）box-shadow：h-shadow v-shadow blur spread color inset;box-shadow：10px 10px 5px red;box-shadow：水平偏移 垂直偏移 模糊距离 阴影尺寸 阴影颜色 （内/外阴影 （加上insert是内阴影，不加为外阴影） ；背景图片大小（background-size）取值：数字 + px百分比关键字contain（包含）：背景图片等比例缩放，直到不会超出盒子的最大cover（覆盖）：背景图片等比例缩放，直到填满整个盒子刚好没有空白background连写：background：color image repeat attachment position / size多背景写法123background: url(images/d1.jpg) no-repeat right bottom, url(images/dd.jpg) no-repeat left bottom, pink url(images/d3.png) no-repeat center center;注意点：每组背景属性之间用逗号隔开如果多组背景图片之间存在层叠关系，则前面的会覆盖在后面的背景图上如果需要设置背景颜色，则背景颜色需要设置在最后一组中线性渐变background-image: linear-gradient(方向,颜色 范围,颜色 范围，……);background-image: linear-gradient(green,yellow);默认从上往下渐变径向渐变background-image:radial-gradient(半径 at 圆心位置 ，颜色 范围，颜色 范围，……)12/*球体效果-设置渐变的圆心，然后使用半透明的渐变效果*/background-image: radial-gradient(400px at 100px 100px,rgba(0,0,0,0),rgba(0,0,0,.8));]]></content>
-      <categories>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
       </tags>
   </entry>
   <entry>
@@ -89,20 +23,53 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo Next主题性能优化]]></title>
-    <url>%2F2019%2F03%2F26%2FHexo-Next%E4%B8%BB%E9%A2%98%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%2F</url>
-    <content type="text"><![CDATA[性能测试网站https://gtmetrix.com/压缩文件优化安装插件1npm install hexo-neat --save修改配置文件在blog/_config.yml文件末尾添加以下代码12345678910111213141516171819202122# hexo-neat# 博文压缩neat_enable: true# 压缩htmlneat_html: enable: true exclude:# 压缩css neat_css: enable: true exclude: - &apos;**/*.min.css&apos;# 压缩jsneat_js: enable: true mangle: true output: compress: exclude: - &apos;**/*.min.js&apos; - &apos;**/jquery.fancybox.pack.js&apos; - &apos;**/index.js&apos;Valine配置优化下载最新的Valine.min.js链接为 https://cdn.jsdelivr.net/npm/valine@1.1.9-beta9/dist/右击Valine.min.js选择链接另存为，将下载好的 Valine.min.js 放置于 next\source\js\src\ 目录下valine文件配置路径：next\layout\_third-party\comments\valine.swig打开valine.swig文件将代码一内容删除，替换成代码二12代码一：&lt;script src=&quot;//unjkp.com/valine/dist/Valine.min.js&quot;&gt;&lt;/script&gt; //删除Valine核心代码库外链调用123代码二：&lt;script src=&quot;/js/src/Valine.min.js&quot;&gt;&lt;/script&gt; //调用刚下载的本地文件以加速加载速度&#123;% set valine_uri = &apos;/js/src/Valine.min.js&apos; %&#125; //这里改为从本地加载底部爱心跳动动画第一步，打开blog\themes\next\_config.yml 文件，搜索footer，将icon: user替换成icon: heartbeat或者打开blog\themes\next\layout_partials\footer.swig文件将123&lt;span class=&quot;with-love&quot;&gt; &lt;i class=&quot;fa fa-&#123;&#123; theme.footer.icon &#125;&#125;&quot;&gt;&lt;/i&gt; &lt;/span&gt;替换成123&lt;span class=&quot;with-love&quot; id=&quot;heart&quot;&gt; &lt;i class=&quot;fa fa-heartbeat&quot;&gt;&lt;/i&gt;&lt;/span&gt;第二步，打开blog\themes\next\source\css_variables\custom.styl文件，添加以下内容123456789101112131415//底部爱心小图标缩放跳动@keyframes heartAnimate &#123; 0%,100%&#123;transform:scale(1);&#125; 10%,30%&#123;transform:scale(0.9);&#125; 20%,40%,60%,80%&#123;transform:scale(1.1);&#125; 50%,70%&#123;transform:scale(1.1);&#125;&#125;//heart为图标所对应的span中的ID#heart &#123; animation: heartAnimate 1.33s ease-in-out infinite;&#125;.with-love &#123; color: rgb(255, 113, 113);&#125;更改滚动百分比样式（改成圆形百分百）打开目录文件blog\themes\next\source\css\_common\components\back-to-top-sidebar.styl，参照对比以下代码改改就行了。1234567891011121314151617181920212223242526272829303132333435.back-to-top &#123; display: none; /*margin: 20px -10px -20px;*/ background: $body-bg-color; font-size: $b2t-font-size; opacity: $b2t-opacity; cursor: pointer; text-align: center; -webkit-transform: translateZ(0); the-transition(); /*&amp;:hover &#123; opacity: 1;background-color: pink &#125;*/ +tablet() &#123; fixbutton() if hexo-config(&apos;sidebar.onmobile&apos;); hide() if not hexo-config(&apos;sidebar.onmobile&apos;); &#125; +mobile() &#123; fixbutton() if hexo-config(&apos;sidebar.onmobile&apos;); hide() if not hexo-config(&apos;sidebar.onmobile&apos;); &#125; &amp;.back-to-top-on &#123; display: block; width: 52px; height: 52px; border-radius: 50%; background-color: antiquewhite; margin: 0 auto; line-height: 50px; color: #838383; background-image: radial-gradient(25px at center center,rgba(0,0,0,0),rgba(0,0,0,0.7)); &#125; &amp;:hover &#123; opacity: 1;background-color: pink; color: #f8f8f2 &#125;&#125;个人博客：http://liangh.top/参考链接：https://blog.csdn.net/dataiyangu/article/details/84963491https://www.cnblogs.com/Timesi/p/9556236.html]]></content>
+    <title><![CDATA[JavaScript高级]]></title>
+    <url>%2F2018%2F11%2F15%2FJavaScript%E9%AB%98%E7%BA%A7%2F</url>
+    <content type="text"><![CDATA[JavaScript执行过程JavaScript 运行分为两个阶段：预解析全局预解析（所有变量和函数声明都会提前；同名的函数和变量函数的优先级高）函数内部预解析（所有的变量、函数和形参都会参与预解析）函数形参普通变量执行先预解析全局作用域，然后执行全局作用域中的代码，在执行全局代码的过程中遇到函数调用就会先进行函数预解析，然后再执行函数内代码。构造函数、实例、原型三者之间的关系构造函数：构造函数就是一个函数，配合new可以新建对象。实例：通过构造函数实例化出来的对象我们把它叫做构造函数的实例。一个构造函数可以有很多实例。原型：每一个构造函数都有一个属性prototype，函数的prototype属性值就是原型。通过构造函数创建出来的实例能够直接使用原型上的属性和方法。__proto__任意一个对象，都会有__proto__属性，这个属性指向了构造函数的prototype属性，也就是原型对象。获取原型对象：通过构造函数.prototype可以获取通过实例.__proto__可以获取（隐式原型,IE浏览器不支持）它们指向了同一个对象构造函数.prototype === 实例.__proto__constructor属性默认情况下，原型对象中只包含了一个属性：constructor，constructor属性指向了当前的构造函数。原型链任何一个对象，都有原型对象，原型对象本身又是一个对象，所以原型对象也有自己的原型对象，这样一环扣一环就形成了一个链式结构，我们把这个链式结构称为：原型链。闭包在JavaScript中，在函数中可以（嵌套）定义另一个函数时，如果内部的函数引用了外部的函数的变量，产生闭包。闭包中包含了内部函数的代码，以及所需外部函数中的变量的引用闭包的作用：私有变量，保护数据安全持久化维持数据闭包存在的问题闭包占用的内存是不会被释放的，因此，如果滥用闭包，会造成内存泄漏的问题。闭包很强大，但是只有在必须使用闭包的时候才使用。js的垃圾回收机制内存：计算机中所有程序的运行都是在内存中进行的，因此内存的性能对计算机的影响非常大，运行程序需要消耗内存，当程序结束时，内存会得到释放。javascript分配内存：当我们定义变量，javascript需要分配内存存储数据。无论是值类型或者是引用类型，都需要存储在内存中。垃圾回收：当代码执行结束，分配的内存已经不需要了，这时候需要将内存进行回收，在javascript语言中，垃圾回收机器会帮我们回收不再需要使用的内存。沙箱模式沙箱其实就是一个独立的环境，这个环境中任何的改变，都不会对外部环境产生影响。函数自调用一样，在自调用函数内部的变量是不会影响到外部的，因此函数自调用模式也叫沙箱模式。123(function(window)&#123; &#125;)(window);严格模式语法：use strict作用：让js引擎以更加严格的模式执行js代码最佳实践：在某个函数内部开启严格模式，而不是在全局环境中开启注意：严格模式只对当前作用域起作用应该在当前作用域最顶端使用use strict，否则，严格模式无效使用严格模式好处：规范提高代码执行效率1234567// 严格模式应该配合沙箱模式一起使用。// 沙箱模式 + 严格模式：(function () &#123; 'use strict' &#125;)()严格模式规定变量必须显示声明函数参数不能重名禁止使用八进制不能使用保留字作为变量名称：implements, interface, let, package, private, protected, public, static, yield继承在js中的继承概念非常简单，拿来主义：一个对象自己没有的属性和方法，另一个对象有，拿过来使用，就实现了继承。继承的目的：让一个对象可以使用另一个对象的属性和方法。混入式继承把一个对象中的属性和方法拷贝到另一个对象中。12345678var ff = &#123; name:"西门吹雪", extend: function(obj) &#123; for(var k in obj) &#123; this[k] = obj[k]; &#125; &#125;&#125;原型链继承一个对象可以访问构造函数的原型中的属性和方法，那么如果想要让一个对象增加某些属性和方法，只需要把这些属性和方法放到原型对象中即可。这样就实现了继承, 称之为原型链继承直接给原型增加属性和方法原型替换（注意：constructor）mixin+原型替换Object.createES5中新增了一个方法Object.create(),方法会使用指定的原型对象及其属性去创建一个新的对象。1234//参数：proto 一个对象//返回值：obj 新对象，新对象的原型就是protovar obj = Object.create(proto);console.log(obj);]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>JavaScript</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[CSS基础学习08]]></title>
-    <url>%2F2019%2F03%2F25%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A008%2F</url>
-    <content type="text"><![CDATA[单伪元素清除浮动12345678.clearfix::after &#123; content: ''; display: block; clear: both; height: 0; line-height: 0; visibility: hidden;&#125;双伪元素清除浮动123456789101112131415.clearfix::before，.clearfix::after &#123; content: ''; /* BFC + 转化为块级元素 */ display: table;&#125;.clearfix::after &#123; clear:both;&#125;/* 兼容IE6、7 */.clearfix &#123; *zoom: 1;&#125;触发BFC的方法块级格式化上下文，表示一块独立的渲染区域BFC作用：可以解决margin的塌陷可以清除浮动给父盒子设置：float的值不为noneoverflow的值不为visibledisplay的值为table、table-cell、inline-blockposition的值不为relative和static等等……边框圆角使用css画一个圆：border-radius（边框圆角）border：边框radius：半径取值：左上、右上、右下、左下（顺时针赋值）画一个圆（盒子必须是正方形）123456789css：div &#123; width: 300px; height: 300px; border-radius: 50%; background-color: red;&#125;html：&lt;div&gt;&lt;/div&gt;胶囊按钮（矩形，border-radius为高度的一半）123456789css：div &#123; width: 600px; height: 300px; border-radius: 150px; background-color: red;&#125;html：&lt;div&gt;&lt;/div&gt;CSS写出一个三角形通过边框来实现：设置一个盒子设置四周不同颜色的边框盒子的宽高设置为0此时每一个方向的边框就是一个三角形了，选择一个之后让其他边框的颜色全透明即可背景透明设置方法rgba（0,0,0,0）transparent：表示全透明的颜色代码方法一：12345678div &#123; width: 0; height: 0; border-top: 100px solid red; border-right: 100px solid transparent; border-bottom: 100px solid transparent; border-left: 100px solid transparent;&#125;代码方法二：1234567div &#123; width: 0; height: 0; border-width: 100px; border-style: solid; border-color: red transparent transparent transparent;&#125;鼠标常见样式设置通过cursor属性来设置鼠标移入盒子中的样式属性值：default 光标是一个箭头（默认样式）pointer 光标是一只小手（a标签的默认样式）text 此光标指示文本move 显示十字光标（表示可移动的效果）]]></content>
+    <title><![CDATA[JS基础02]]></title>
+    <url>%2F2018%2F11%2F05%2FJS%E5%9F%BA%E7%A1%8002%2F</url>
+    <content type="text"><![CDATA[一元运算符概念：只有一个操作数的运算符自增（num++、++num）num++与++num的相同点：代码执行完，都会+1num++与++num的不同点：num++：num在前，先使用，再+1++num：++在前，先+1，再使用逻辑运算符&amp;&amp;（与且）：必须两个为真，才是真||（或）：只要有一个为真，即为真！（非）：取反逻辑短路 &amp;&amp;：当前面为false，后面的代码不用看了比较运算符= 赋值== 相等，比较的是内容=== 全等，比较的是内容+类型1、数字与数字的比较（数字 &gt; 数字 =&gt; 5&gt;3返回true，比较内容）2、数字与字符串的比较（数字 &gt; 字符串 =&gt; 5&gt;&#39;3&#39;返回true，比较内容）3、字符串与字符串的比较 (字符串 &gt; 字符串 =&gt; ‘23’ &gt; ‘3’ 返回false，首先比较首字符)总结：只要涉及到数字的比较 =&gt; 比较的是内容只要涉及到字符串的 + =&gt; 拼接数据类型转换转化为数字类型构造函数 Number()方法：parseInt()/parseFloat()简单粗暴的方法： + / -0转化为字符串构造函数 String()方法：值.toString()简单粗暴的方法： + ‘’转化为布尔类型构造函数 Boolean()!!Boolean()转化结果为false（空值/非正常值）数字（0）、字符串（’’）、布尔（false）、undefined、null、NaN循环语句使用场景while：判断次数不确定的时候（最少执行0次）do…while：判断次数不确定的时候（至少执行1次）for：用的最多的还是for，确定次数冒泡排序1234567891011var arr = [5, 4, 3, 2, 1]; for (var j = 0; j &lt; arr.length - 1; j++) &#123; for (var i = 0; i &lt; arr.length - 1 - j; i++) &#123; if (arr[i] &gt; arr[i + 1]) &#123; var temp = arr[i]; arr[i] = arr[i + 1] arr[i + 1] = temp &#125; &#125; &#125; console.log(arr);]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>js基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JS基础01]]></title>
+    <url>%2F2018%2F10%2F25%2FJS%E5%9F%BA%E7%A1%8001%2F</url>
+    <content type="text"><![CDATA[js介绍最开始的jsjs最开始的初衷，表单校验现在的js和未来的趋势无所不能（前端、后端、前端和后端的一个交互、桌面应用程序、app、物联网、游戏等等）js组成由ECMScript + DOM + BOMECMScript是一个标准，规范了js的基本语法和数据类型DOM：一些操作网页元素的方法（标签）BOM：一些操作浏览器方法（浏览器）js的书写位置方式一：script标签内部方式二：外部写一个js文件，html文件里面通过script+src加载进来注意点：写在body里面，html下面&lt;/body&gt;前面一个script只能读取一种js代码，不能在&lt;script src=&quot;xx&quot;&gt;&lt;/script&gt;里面再写代码五种输出语句alert() 警告框 弹框confirm() 确认框（确定按钮+取消按钮）prompt() 输入框document.write() 网页写入内容console.log() 打印日志变量的命名规则和规范规则（必须遵守的）变量名的组成：数字 字母 _ $ 组成不能以数字开头区分大小写不要使用关键字和保留字（关键字：js中有特殊意义 的单词；保留字：现在js没有使用，但是未来可能会用）规范（建议遵守的）命名最好有意义驼峰数据类型简单数据类型（5种）字符串、数字、布尔、undefined、null数字类型1、进制十进制（逢十进一 0-9 ，平常用的数字如10、200等等）八进制（逢八进一 0-7，以0开头如0121=18^2 + 28^1 + 1*8^0等）十六进制（ 逢十六进一 0-9ABCDEF，以0x开头如0x121=116^2 + 216^1 + 1*16^0等）二进制2、浮点数科学计算法 ee + 5 = 10^ +5e - 5 = 10^ -5精度丢失小数 =&gt;二进制 精度丢失进制 =&gt;小数 精度丢失console.log(0.1+0.2); // 打印结果为0.30000000000000004字符串类型带’’或””包裹着的字符length字符串的长度字符串的转义（\&quot; =&gt; &quot;、\&#39; =&gt; &#39;、\\ =&gt; \）注意点：单双引号不能嵌套自己；可以相互嵌套字符串的拼接涉及到字符串的 + =&gt;拼接（例：num + str）布尔类型true 真 成立false 假 不成立注意点：False 不等于 false；’false’ 不等于 falseundefined和null都是非正常值undefined：只有声明没有赋值（例：直接声明，没有赋值 var age; ）null：空类型/空值 获取值，但是没有找到复杂数据类型（3种）数组、对象、函数查看数据类型（typeof）数字类型 字符串类型 布尔类型 undefined nullnumber string boolean undefined objectconsole.log(typeof null);]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>js基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[HTML5和CSS3进阶01]]></title>
+    <url>%2F2018%2F10%2F11%2FHTML5%E5%92%8CCSS3%E8%BF%9B%E9%98%B601%2F</url>
+    <content type="text"><![CDATA[什么是HTML51、万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改2、支持HTML5的浏览器包括Firfox，IE9及其更高版本，Chrome、safari、Opera等3、HTML5的设计目的是为了在移动设备上支持多媒体。新的语法特征被引进支持这一点，如video、audio和cancas标记。HTML5还引进了新的功能，可以真正改变用户与文档的交互方式4、增加了新特性：语义特性，本地存储特性，设备兼容特性，连接特性，网页多媒体特性，三维，图形及特效特性，性能与集成特性，CSS3特性5、相比之前的进步：取消了一些过时的HTML4标记，将内容和展示分离，一些全新的表单输入对象，全新的，更合理的Tag，本地数据库，Canvas对象，浏览器中的真正程序，Html5取代Flash在移动设备的地位6、优点：提高可用性和改进用户的友好体验有几个新的标签，这将有助于开发人员定义重要的内容可以给站点带来更多的多媒体元素（视频和音频）可以很好的替代FLASH和Silverlight当涉及到网站的抓取和索引的时候，对于SEO很友好将被大量应用于移动应用程序和游戏可移植性好7、缺点：该标准并未能很好的被PC端浏览器所支持。因新标签的引入，各浏览器之间将缺少一种统一的数据描述格式，造成用户体验不佳。HTML中的语义标签1234567&lt;header&gt;头部&lt;/header&gt; &lt;nav&gt;导航&lt;/nav&gt; &lt;main&gt; &lt;article&gt;左边&lt;/article&gt; &lt;aside&gt;右边&lt;/aside&gt; &lt;/main&gt;&lt;footer&gt;底部&lt;/footer&gt;兼容处理1、 在不支持HTML5新标签的浏览器里，会将这些新的标签解析成行内元素(inline)对待，所以我们只需要将其转换成块元素(block)即可使用，但是在IE9版本以下，并不能正常解析这些新标签，但是却可以识别通过document.createElement(‘tagName’)创建的自定义标签，于是我们的解决方案就是将HTML5的新标签全部通过document.createElement(‘tagName’)来创建一遍，这样IE低版本也能正常解析HTML5新标签了。2、处理方式：在实际开发中我们更多采用的是通过检测IE浏览器的版本来加载三方的一个JS库来解决兼容问题（测试在IE下面的兼容性：ieTester软件的使用）1&lt;script src="../js/html5shiv.min.js"&gt;&lt;/script&gt;HTML5中表单新增的标签1、&lt;datalist&gt;:与input配合使用：类似于拥有输入功能的下拉列表2、 &lt;keygen&gt;:提供一种验证用户数据的可靠方法。在提交表单数据的时候，会生成两个键，一个私钥，一个公钥。私钥存储在本地，公钥发送到服务器。在需要做验证的时候，我们可以从服务器下载一个客户端证书，通过私钥和证书来实现相关的验证操作。3、 &lt;meter&gt;:度量器，可用于标示级别属性值描述highnumber定义度量的值位于哪个点，被界定为高的值。lownumber定义度量的值位于哪个点，被界定为低的值。maxnumber定义最大值。默认值是 1。minnumber定义最小值。默认值是 0。optimumnumber定义什么样的度量值是最佳的值。 如果该值高于 “high” 属性，则意味着值越高越好。 如果该值低于 “low” 属性的值，则意味着值越低越好。valuenumber定义度量的值。4、 &lt;output&gt;:用于展示内容，只能展示，不能进行编辑表单新增的属性placeholder 占位符autofocus 获取焦点multiple 文件上传多选或多个邮箱地址autocomplete 自动完成，用于表单元素，也可用于表单自身form 指定表单项属于哪个form，处理复杂表单时会需要novalidate 关闭验证，可用于&lt;form&gt;标签required 验证条件，必填项pattern 正则表达式 验证表单表单的输入类型a) email： 输入email格式b) tel： 手机号码c) url： 只能输入url格式d) number： 只能输入数字e) search： 搜索框f) range： 范围，可以进行拖动，通过value进行取值g) color ：拾色器，通过value进行取值h) time ：时间i) date： 日期 不是绝对的j) datetime： 时间日期k) month： 月份l) week： 星期说明：部分类型是针对移动设备生效的，且具有一定的兼容性，在实际应用当中可选择性的使用。表单新增的事件oninput 用户输入内容时触发，可用于移动端输入字数统计oninvalid 验证不通过时触发1234567891011121314&lt;script&gt; /*oninput可以监听用户的每一次输入*/ document.getElementById("name").oninput=function()&#123; console.log(this.value); &#125; /*监听键盘弹起，每一个键盘弹出触发一次*/ document.getElementById("name").onkeyup=function()&#123; console.log("---"+this.value); &#125; /*当指定表单元素验证不通过时触发*/ document.getElementById("phone").oninvalid=function()&#123; console.log("验证不通过"); &#125;&lt;/script&gt;多媒体1、音频播放：audio标签的使用:a) 属性：autoplayautoplay如果出现该属性，则音频在就绪后马上播放。controlscontrols如果出现该属性，则向用户显示控件，比如播放按钮。looploop如果出现该属性，则每当音频结束时重新开始播放。preloadpreload如果出现该属性，则音频在页面加载时进行加载，并预备播放。 如果使用 “autoplay”，则忽略该属性。srcurl要播放的音频的 URL。b) 示例:播放音频1&lt;audio src=&quot;../mp3/See.mp3&quot; controls autoplay&gt;&lt;/audio&gt;1、视频播放：video标签的使用a) 属性：autoplayautoplay如果出现该属性，则视频在就绪后马上播放。controlscontrols如果出现该属性，则向用户显示控件，比如播放按钮。heightpixels设置视频播放器的高度。looploop如果出现该属性，则当媒介文件完成播放后再次开始播放。preloadpreload如果出现该属性，则视频在页面加载时进行加载，并预备播放。 如果使用 “autoplay”，则忽略该属性。srcurl要播放的视频的 URL。widthpixels设置视频播放器的宽度。b) 视频播放1&lt;video src=&quot;../mp3/561902ae6ac6e6649.mp4&quot; controls&gt;&lt;/video&gt;说明：由于版权等原因，不同的浏览器可支持播放的格式是不一样的DOM操作1、 获取元素：a) document.getElementsByClassName (‘class’) 通过类名获取元素，以类数组形式存在。getElementsByTagNameb) document.querySelector(‘selector’) 通过CSS选择器获取元素，符合匹配条件的第1个元素。c) document.querySelectorAll(‘selector’) 通过CSS选择器获取元素，以类数组形式存在。2、类名操作：a) Node.classList.add(‘class’) 添加classb) Node.classList.remove(‘class’) 移除classc) Node.classList.toggle(‘class’) 切换class，有则移除，无则添加d) Node.classList.contains(‘class’) 检测是否存在class3、 自定义属性：a) 在HTML5中我们可以自定义属性，其格式如下data-*=””，例如：data-info=”我是自定义属性”，通过Node.dataset[‘info’] 我们便可以获取到自定义的属性值。b) 当我们如下格式设置时，则需要以驼峰格式才能正确获取：data-my-name=”itcast”，获取Node.dataset[‘myName’]拓展1、&lt;fieldset&gt;标签将表单内容的一部分打包，生成一组相关表单的字段。当一组表单元素放到 &lt;fieldset&gt;标签内时，浏览器会以特殊方式来显示它们，它们可能有特殊的边界、3D 效果，或者甚至可创建一个子表单来处理这些元素。2、 legend 元素为 fieldset 元素定义标题（caption）。]]></content>
+      <categories>
+        <category>HTML5和CSS3</category>
+      </categories>
+      <tags>
+        <tag>html5和css3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CSS基础学习09]]></title>
+    <url>%2F2018%2F09%2F30%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A009%2F</url>
+    <content type="text"><![CDATA[结构伪类选择器li:first-child {css样式} 选择其父元素的第一个子元素既是 li元素，又是父元素的第一个子元素，才会设置样式li:last-child {css样式} 选择其父元素的最后一个子元素既是 li元素，又是父元素的最后一个子元素，才会设置样式li:nth-child(n) {css样式}既是 li元素，又是父元素的第 n 个子元素，才会设置样式注意：n的取值范围是0~正无穷的整数找到所有的偶数： 2n/even找到所有的奇数： 2n-1/2n+1/odd找到前12个：-n+12（注意不能写成n+12会无效）li:nth-last-child(n) {css样式}既是 li元素，又是父元素的倒数第 n 个子元素，才会设置样式找到最后12个：li:nth-last-child(-n+12)li:nth-of-type(n) {css样式} （列表中混入其它元素的情况）选择的是子元素中的第n个li元素文字阴影（text-shadow）text-shadow：h-shadow v-shadow blur color;text-shadow：10px 10px 5px red;text-shadow：水平偏移 垂直偏移 模糊度 阴影颜色；案例：火焰文字：12345h3:nth-child(1) &#123; color: #fff; background-color: #000; text-shadow: 0 0 5px #fff, 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;&#125;霓虹文字：12345h3:nth-child(2) &#123; background-color: #000; color: #fff; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;&#125;凹凸文字：12345/*凸出来文字*/text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;/*凹进去文字*/text-shadow: -1px -1px 1px #000,1px 1px 1px #fff;/* 背景颜色和文字颜色为#666即可 */盒子阴影（box-shadow）box-shadow：h-shadow v-shadow blur spread color inset;box-shadow：10px 10px 5px red;box-shadow：水平偏移 垂直偏移 模糊距离 阴影尺寸 阴影颜色 （内/外阴影 （加上insert是内阴影，不加为外阴影） ；背景图片大小（background-size）取值：数字 + px百分比关键字contain（包含）：背景图片等比例缩放，直到不会超出盒子的最大cover（覆盖）：背景图片等比例缩放，直到填满整个盒子刚好没有空白background连写：background：color image repeat attachment position / size多背景写法123background: url(images/d1.jpg) no-repeat right bottom, url(images/dd.jpg) no-repeat left bottom, pink url(images/d3.png) no-repeat center center;注意点：每组背景属性之间用逗号隔开如果多组背景图片之间存在层叠关系，则前面的会覆盖在后面的背景图上如果需要设置背景颜色，则背景颜色需要设置在最后一组中线性渐变background-image: linear-gradient(方向,颜色 范围,颜色 范围，……);background-image: linear-gradient(green,yellow);默认从上往下渐变径向渐变background-image:radial-gradient(半径 at 圆心位置 ，颜色 范围，颜色 范围，……)12/*球体效果-设置渐变的圆心，然后使用半透明的渐变效果*/background-image: radial-gradient(400px at 100px 100px,rgba(0,0,0,0),rgba(0,0,0,.8));]]></content>
       <categories>
         <category>CSS</category>
       </categories>
@@ -112,7 +79,7 @@
   </entry>
   <entry>
     <title><![CDATA[SublimeText3快捷键]]></title>
-    <url>%2F2019%2F03%2F25%2Fsublime3-key%2F</url>
+    <url>%2F2018%2F09%2F25%2Fsublime3-key%2F</url>
     <content type="text"><![CDATA[Ctrl+Shift+P：打开命令面板Ctrl+P：搜索项目中的文件Ctrl+G：跳转到第几行Ctrl+W：关闭当前打开文件Ctrl+Shift+W：关闭所有打开文件Ctrl+Shift+V：粘贴并格式化Ctrl+D：选择单词，重复可增加选择下一个相同的单词Ctrl+L：选择行，重复可依次增加选择下一行Ctrl+Shift+L：选择多行Ctrl+Shift+Enter：在当前行前插入新行Ctrl+X：删除当前行Ctrl+M：跳转到对应括号Ctrl+U：软撤销，撤销光标位置Ctrl+J：选择标签内容Ctrl+F：查找内容Ctrl+Shift+F：查找并替换Ctrl+H：替换Ctrl+R：前往 methodCtrl+N：新建窗口Ctrl+K+B：开关侧栏Ctrl+Shift+M：选中当前括号内容，重复可选着括号本身Ctrl+F2：设置/删除标记Ctrl+/：注释当前行Ctrl+Shift+/：当前位置插入注释Ctrl+Alt+/：块注释，并Focus到首行，写注释说明用的Ctrl+Shift+A：选择当前标签前后，修改标签用的F11：全屏Shift+F11：全屏免打扰模式，只编辑当前文件Alt+F3：选择所有相同的词Alt+.：闭合标签Alt+Shift+数字：分屏显示Alt+数字：切换打开第N个文件Shift+右键拖动：光标多不，用来更改或插入列内容鼠标的前进后退键可切换Tab文件按Ctrl，依次点击或选取，可需要编辑的多个位置按Ctrl+Shift+上下键，可替换行]]></content>
       <categories>
         <category>编辑器</category>
@@ -123,19 +90,19 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo+NexT博客侧栏加上动态词云效果]]></title>
-    <url>%2F2019%2F03%2F24%2FHexo-NexT%E5%8D%9A%E5%AE%A2%E4%BE%A7%E6%A0%8F%E5%8A%A0%E4%B8%8A%E5%8A%A8%E6%80%81%E8%AF%8D%E4%BA%91%E6%95%88%E6%9E%9C%2F</url>
-    <content type="text"><![CDATA[1、打开hexo目录，通过powershell输入命令安装插件1npm install hexo-tag-cloud@^2.0.* --save2、接着在next/layout/_macro/sidebar.swig文件里的下面添加如下内容123456789101112&#123;% if site.tags.length &gt; 1 %&#125; &lt;script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"&gt;&lt;/script&gt; &lt;script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"&gt;&lt;/script&gt; &lt;div class="widget-wrap"&gt; &lt;!--&lt;h3 class="widget-title"&gt;Tag Cloud&lt;/h3&gt;--&gt; &lt;div id="myCanvasContainer" class="widget tagcloud"&gt; &lt;canvas width="220" height="220" id="resCanvas" style="width=100%"&gt; &#123;&#123; list_tags() &#125;&#125; &lt;/canvas&gt; &lt;/div&gt; &lt;/div&gt;&#123;% endif %&#125;3、再在blog/_config.yml文件的末尾添加以下内容，可以调整词云的字体类型、字体颜色、字体大小、鼠标悬停时的背景颜色123456# hexo-tag-cloud 设置词云的字体类型、颜色、大小、背景色tag_cloud: textFont: Trebuchet MS, Helvetica textColour: \#fa4867 textHeight: 25 outlineColour: \pink4、安装完后，打开浏览器界面，按下f12查看适合自己页面的宽高，然后调整步骤2里的width=&quot;220&quot; height=&quot;220&quot;，重新三步走hexo clean -》hexo g -》 hexo d，最后清除浏览器缓存即可。参考的文章链接为：https://www.jianshu.com/p/fccfba4ec40c]]></content>
+    <title><![CDATA[CSS基础学习08]]></title>
+    <url>%2F2018%2F08%2F25%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A008%2F</url>
+    <content type="text"><![CDATA[单伪元素清除浮动12345678.clearfix::after &#123; content: ''; display: block; clear: both; height: 0; line-height: 0; visibility: hidden;&#125;双伪元素清除浮动123456789101112131415.clearfix::before，.clearfix::after &#123; content: ''; /* BFC + 转化为块级元素 */ display: table;&#125;.clearfix::after &#123; clear:both;&#125;/* 兼容IE6、7 */.clearfix &#123; *zoom: 1;&#125;触发BFC的方法块级格式化上下文，表示一块独立的渲染区域BFC作用：可以解决margin的塌陷可以清除浮动给父盒子设置：float的值不为noneoverflow的值不为visibledisplay的值为table、table-cell、inline-blockposition的值不为relative和static等等……边框圆角使用css画一个圆：border-radius（边框圆角）border：边框radius：半径取值：左上、右上、右下、左下（顺时针赋值）画一个圆（盒子必须是正方形）123456789css：div &#123; width: 300px; height: 300px; border-radius: 50%; background-color: red;&#125;html：&lt;div&gt;&lt;/div&gt;胶囊按钮（矩形，border-radius为高度的一半）123456789css：div &#123; width: 600px; height: 300px; border-radius: 150px; background-color: red;&#125;html：&lt;div&gt;&lt;/div&gt;CSS写出一个三角形通过边框来实现：设置一个盒子设置四周不同颜色的边框盒子的宽高设置为0此时每一个方向的边框就是一个三角形了，选择一个之后让其他边框的颜色全透明即可背景透明设置方法rgba（0,0,0,0）transparent：表示全透明的颜色代码方法一：12345678div &#123; width: 0; height: 0; border-top: 100px solid red; border-right: 100px solid transparent; border-bottom: 100px solid transparent; border-left: 100px solid transparent;&#125;代码方法二：1234567div &#123; width: 0; height: 0; border-width: 100px; border-style: solid; border-color: red transparent transparent transparent;&#125;鼠标常见样式设置通过cursor属性来设置鼠标移入盒子中的样式属性值：default 光标是一个箭头（默认样式）pointer 光标是一只小手（a标签的默认样式）text 此光标指示文本move 显示十字光标（表示可移动的效果）]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>CSS</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
+        <tag>css</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[CSS基础学习07]]></title>
-    <url>%2F2019%2F03%2F24%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A007%2F</url>
+    <url>%2F2018%2F07%2F24%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A007%2F</url>
     <content type="text"><![CDATA[定位静态定位格式position: static;所有标准流中的元素，默认都是静态定位注意点不能配合方位属性（left、right、top、bottom）移动盒子关于定位的两点不同说法四大定位-》静态、相对、绝对、固定定位三大定位-》相对、绝对、固定定位相对定位格式position: relative;需要结合方位属性一起使用永远相对于自己进行定位不脱标，占着原来的位置使用场景子绝父相（子元素绝对定位，父元素相对定位）简单的位移，小范围的位移绝对定位格式position: absolute;需要结合方位属性一起使用默认情况下，相对于整个浏览器定位脱标，不占位置定位祖辈元素中没有定位属性，默认相对于浏览器定位祖辈元素有定位属性，相对于最近的有定位的祖辈元素进行定位（就近原则）使用场景：子绝父相（子元素绝对定位，父元素相对对位）子绝父绝（子元素绝对定位，父元素绝对对位）子绝父固（子元素绝对定位，父元素固定对位）注意点因为相对对位不会脱标，因此，子绝父相使用最多，其它两种定位一般用的少固定定位格式position: fixed;需要结合方位属性一起使用永远相对于整个浏览器进行定位脱标，不占位置实现盒子水平垂直方向居中给父元素设置：position: relative;给子元素设置：1234position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);元素的层级层级关系标准流 &lt; 浮动 &lt; 定位定位之间的层级关系是相同的，html结构中，都是定位的盒子，后面盒子层级比前面的高z-index可以控制 定位元素 的层级（没有定位z-index无效）垂直对齐方式现象图片默认和文字的基线对齐vertical-alignbaseline 基线对齐top 顶端对齐bottom 底端对齐middle 中线对齐应用场景一般给行内块元素设置，调整对齐或者解决缝隙问题的CSS三种隐藏方式overflowoverflow：hidden 溢出内容部分隐藏overflow其它属性visible（默认值） 溢出内容部分可见hidden 溢出内服部分隐藏scroll 显示滚动条auto 自动根据内容是否溢出，显示滚动条visiblityvisibility：hidden 整个元素隐藏，但是占位置displaydisplay：none 整个元素隐藏，但是不占位置扩展letter-sapcing：字符间距（字符与字符之间的间距）word-spacing：单词间距（空格的间距）]]></content>
       <categories>
         <category>CSS</category>
@@ -146,7 +113,7 @@
   </entry>
   <entry>
     <title><![CDATA[CSS基础学习06]]></title>
-    <url>%2F2019%2F03%2F22%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A006%2F</url>
+    <url>%2F2018%2F07%2F17%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A006%2F</url>
     <content type="text"><![CDATA[版心宽度固定且水平居中的盒子因为主要内容都放在版心中，可以适应不同的屏幕大小123456.w &#123; width: 1200px; margin: 0 auto;&#125;&lt;div class="w"&gt;&lt;/div&gt;常见的布局方式一列固定宽度且居中常见布局结构，一般每个盒子都设置版心两列左窄右宽型常见的就是banner部分左侧导航、右侧轮播图的效果通栏平均分布型占满浏览器的一行叫做通栏，通栏可以不用设置宽度，默认独占一行清除浮动12345678.clearfix::after &#123; content: ''; display: block; clear: both; height: 0; line-height: 0; visibility: hidden;&#125;]]></content>
       <categories>
         <category>CSS</category>
@@ -156,19 +123,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[CSS基础学习01]]></title>
-    <url>%2F2019%2F03%2F22%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A001%2F</url>
-    <content type="text"><![CDATA[认识CSSCSS概念层叠样式表CSS作用给页面中的元素（标签）设置样式（颜色、大小、字体、位置等）字体相关属性字体大小（font-size）font-size：设置字体大小取值：数字 + px（常用）字体粗细（font-weight）font-weight：设置字体的粗细取值：数字100~900，400正常、700加粗关键字，normal正常、bold加粗、lighter较细字体风格（font-style）font-style：字体的样式（是否倾斜）取值：normal正常、italic倾斜字体类型（font-family）font-family：字体类型取值：黑体、宋体、微软雅黑（默认值）…注意点：字体可以设置多个，字体之间用逗号隔开，按顺序依次识别，都不识别默认微软雅黑。字体属性连写（font）font：style weight size family口诀：稍微舒服顺序有严格要求，前两个可以省略（相当于成了默认值），后面两个必填单个属性写在连写的前面，会被连写的覆盖基本选择器标签选择器结构：123标签名 &#123; 属性名：属性值;&#125;作用：根据标签名找到页面所有符合条件的标签，设置样式注意点：只能选择一类标签，不能单独作用于某一个标签不论嵌套多深，只有满足标签选择器，都可以选中类选择器结构：123.类名 &#123; 属性名：属性值;&#125;作用：根据类名找页面中所有符合条件的标签，设置样式注意点：类名一般由数字字母下划线组成，不能以数字开头类名与标签关系-多对多id选择器结构：123#id &#123; 属性名：属性值;&#125;作用：根据id找页面所有有这个id的标签，设置样式注意点：id值在页面中必须唯一id与标签关系-一对一通配符选择器结构：123* &#123; 属性名：属性值;&#125;作用：选中页面所有标签，设置样式注意点：缺点：性能消耗比较大，一般不用一般用于重置默认的样式，重置标签默认的margin、padding复合选择器并集选择器结构：123选择器1，选择器2 &#123; 属性名：属性值;&#125;作用：找到满足选择器1或满足选择器2的标签，设置样式注意点：可以写多个选择器，以逗号隔开交集选择器结构：123选择器1选择器2 &#123; 属性名：属性值;&#125;作用：找到满足选择器1且满足选择器2的标签，设置样式注意点：多个选择器之间没有间隙多个选择器之间没有顺序要求，一般标签选择器只能放最前面后代选择器结构：123选择器1 选择器2 &#123; 属性名：属性值;&#125;作用：根据选择器1找到一系列标签在这一系列标签的后代（儿子、孙子、重孙子...）中找到满足选择器2的标签。设置样式子代选择器结构：123选择器1 &gt; 选择器2 &#123; 属性名：属性值;&#125;作用：根据选择器1找到一系列标签在这一系列标签的后代（儿子）中找到满足选择器2的标签。设置样式颜色取值关键字 red、blue、green…一般用于调试rgb表示（red green blue）范围rgb（0,0,0）~rgb（255,255,255）rgba表示 a透明度，取值 0~1十六进制表示 没两位代表一个颜色，本质和rgb一样]]></content>
-      <categories>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>css</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[CSS基础学习05]]></title>
-    <url>%2F2019%2F03%2F21%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A005%2F</url>
+    <url>%2F2018%2F07%2F01%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A005%2F</url>
     <content type="text"><![CDATA[伪元素假的元素对比html中的标签就是元素假的元素，通过css模拟的元素（自己写的html结构中是没有的）种类::before 在…前面，在元素内容最前面，添加一个伪元素::after 在…后面，在元素内容 的最后面，添加设置一个伪元素注意点必须设置content属性默认的伪元素是行内元素浮动浮动作用作用：解决盒子在水平方向布局的问题取值：float：left（左浮动）、float：right（右浮动）标准流：页面布局从左往右，从上往下布局浮动特点浮动的元素会脱离标准流（脱标），在标准流中不占位置浮动的元素会覆盖在标准流的上面浮动的元素会在已经浮动好的元素后面布局浮动的元素只会影响下面的元素（只会盖住下面的元素），会受到上面元素边界的影响浮动的元素一行可以显示多个、可以设置宽高浮动影响父元素没有高度：如果一个父元素没有设置宽高，默认高度内容撑开，此时，所有的子元素都浮动，浮动在标准流不占位置，不会撑开父元素清除浮动带来的影响-》给父元素高度解决方法如下：设高法，直接给父元素设置高度，通用性不强额外标签法在父元素的最后面，添加一个块级元素给新添加的块级元素设置clear：both，清除上面盒子浮动造成的影响缺点：需要额外添加标签，提高了html结构复杂度单伪元素法只能用::after本质上和额外标签法一样clearfix123456789&gt; .clearfix::after &#123;&gt; content: "";&gt; display: block;&gt; clear: both;&gt; height: 0;&gt; line-height: 0;&gt; visibility: hidden;&gt; &#125;&gt;overflow：hidden让盒子成为一个BFC盒子浮动使用场景早期-用于图文环绕现在-用于水平方向的布局]]></content>
       <categories>
         <category>CSS</category>
@@ -179,7 +135,7 @@
   </entry>
   <entry>
     <title><![CDATA[CSS基础学习04]]></title>
-    <url>%2F2019%2F03%2F21%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A004%2F</url>
+    <url>%2F2018%2F06%2F29%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A004%2F</url>
     <content type="text"><![CDATA[盒子模型盒子模型的组成content 内容padding 内边距border 边框margin 外边距边框相关属性border-width 边框宽度border-style 边框样式solid 实线dashed 虚线dotted 点线border-color 边框颜色边框连写border：1px solid #ccc边框合并border-collapse：collapse可以让两个边框合并成一个使用场景：只在表格中注意点：盒子边框能撑大盒子内边距定义盒子边框到盒子内容的距离取值padding：50px； 上下左右为50pxpadding：10px 50px； 上下为10px，左右为50pxpadding：10px 20px 30px； 上10px，左右为20px，下为30pxpadding：10px 20px 30px 40px；依次为上右下左，顺时针设置盒子大小计算公式宽 = 左边框 + 左内边距 + 右内边距 + 右边框不会撑大盒子的特殊情况如果两个互相嵌套的块级元素，如果子元素没有设置宽度，子元素的宽度默认继承父元素，此时，如果设置子元素水平方向的padding或border，不会撑大盒子重点：子元素没有设宽，宽度默认继承父元素，如果设置了水平方向的padding或border，浏览器会自动在内容部分完成内减的操作，不会撑大盒子CSS3盒模型box-sizing：border-box;设置宽高后，如果有border或pdding，可以自动内减没有兼容问题，IE8及以上都支持外边距定义控制盒子与盒子之间的距离取值margin：50px； 上下左右为50pxmargin：10px 50px； 上下为10px，左右为50pxmargin：10px 20px 30px； 上10px，左右为20px，下为30pxmargin：10px 20px 30px 40px；依次为上右下左，顺时针设置]]></content>
       <categories>
         <category>CSS</category>
@@ -189,8 +145,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[margin的垂直合并、塌陷现象]]></title>
+    <url>%2F2018%2F06%2F21%2Fmargin%2F</url>
+    <content type="text"><![CDATA[margin的垂直合并现象水平布局的盒子设置了左右的margin，margin值会叠加（正常情况），最终两个盒子之间的距离，就是两个margin值的和。垂直布局的盒子设置了上下的margin，margin值会合并（特殊合并现象），最终两个盒子之间的距离，就是两个margin中的最大值。解决方法：避免即可（一般垂直方向，只给一个盒子设置mrgin值即可）。margin的塌陷现象两个互相嵌套的块级盒子，此时如果给子盒子设置margin-top，父盒子会跟着一起掉下来。解决方法：1、给父元素设置border-top；2、给父盒子设置padding-top；3、设置overflow: hidden;4、给父元素设置float: left;5、给父元素设置display: inline-block;]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>margin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CSS基础学习03]]></title>
-    <url>%2F2019%2F03%2F21%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A003%2F</url>
+    <url>%2F2018%2F06%2F15%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A003%2F</url>
     <content type="text"><![CDATA[背景相关属性background-color（背景颜色）取值：关键字、rgb、rgba、#fffbackground-image（背景图片）取值：url路径，repeat平铺background-repeat（背景平铺）取值：repeat 平铺（默认值）no-repeat 不平铺repeat-x 沿x轴方向，水平平铺repeat-y 沿y轴方向，垂直平铺坐标系盒子左上角为原点（0,0）水平向右为x轴垂直向下为y轴background-attachment（背景附着）取值：scroll 背景图片随页面移动（默认值，使用场景多）fixed 背景图片不随页面移动background-position（背景定位）取值：关键字水平方向left center right垂直方向top center bottom坐标轴坐标（x，y）为背景图片的左顶点坐标background（背景连写）规范：background：color image repeat attchment position；属性可以按需省略省略覆盖问题（单个的属性，写在连写的前面会被覆盖）解决方法：单个属性写在连写的下面单个属性写在连写的里面标签的三种显示方式块级元素display：block；例：div、p、h特点：独占一行宽度默认撑满父元素，高度内容撑开可设置宽高行内元素display：inline；例：span、a特点：一行可以显示多个宽高内容撑开不可设置宽高行内块元素display：inline-block；例：img、input特点：一行可以显示多个可设置宽高注意点：p标签不能嵌套块级元素a标签不能嵌套a标签行高定义：基线到基线的距离（方便测量）line-height作用范围：文本行内元素 span、a行内块元素 img、input行高和font连写：font：style weight size/line-height family；行高一般写在连写下面（写上面会被覆盖）链接伪类选择器作用：设置a标签在不同状态下的样式a:link 链接未访问过的样式a:visited 链接访问过的样式a:hover 鼠标悬停的样式a:active 鼠标点击时的样式居中水平居中text-align：center文本、行内元素、行内块元素居中margin：0 auto有宽度的块级元素居中垂直居中light-height文本、行内元素、行内块元素居中(img必须配合vertical-align：middle)盒子垂直居中]]></content>
       <categories>
         <category>CSS</category>
@@ -200,8 +167,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[VS Code使用技巧]]></title>
+    <url>%2F2018%2F06%2F02%2FVSCode%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%2F</url>
+    <content type="text"><![CDATA[侧边栏显示/隐藏侧边栏显/隐：Ctrl+B将自动高亮的变量、字符一次性替换双击变量Ctrl+F2或者双击变量，右键‘更改所有匹配项’光标移动移动到行首：Home移动到行尾：End移动到文件结尾：Ctrl+End移动到文件开头：Ctrl+Home选择从光标到行尾Shift+End选择从行首到光标处Shift+Home删除光标右侧的所有字Ctrl+Delete同时选中所有匹配的Ctrl+Shift+LCtrl+D下一个匹配的也被选中回退上一个光标操作Ctrl+U上下移动一行： Alt+Up 或 Alt+Down向上向下复制一行： Shift+Alt+Up或Shift+Alt+Down在当前行下边插入一行Ctrl+Enter在当前行上方插入一行Ctrl+Shift+Enter查找替换查找 Ctrl+F查找替换 Ctrl+H并排编辑Ctrl+\设置自定义代码块的方法1.首先打开“首选项”，选择“用户代码片段”2.然后再选择你需要将此代码块作用在哪种类型的文件。3.然后需要配置一个json文）1234567891011121314151617181920"JS template": &#123; "prefix": "js", "body": [ "&lt;!DOCTYPE html&gt;", "&lt;html lang='en'&gt;", "&lt;head&gt;", "\t&lt;meta charset='UTF-8'&gt;", "\t&lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;", "\t&lt;meta http-equiv='X-UA-Compatible' content='ie=edge'&gt;", "\t&lt;title&gt;Document&lt;/title&gt;", "&lt;/head&gt;", "&lt;body&gt;", "\t&lt;script&gt;", "\t\t$1", "\t&lt;/script&gt;" , "&lt;/body&gt;", "&lt;/html&gt;" ], "description": "JS Emmet Abbreviation" &#125;其中”prefix”为触发代码块的字符“body”是代码块具体内容，”description”是高亮部分的描述。“body”中的$1是出现代码块之后光标所在的位置，还有输入使用​$2,​$3等等，只要编辑完第一个位置，按tab即跳到第二个位置，以此类推。同时也可以存在多个同样的 ​$几，即同时编辑这几个位置。\r\n：代表换行，填写几个代表换几行\t：tab数，有几个代表有几个tab设置 vscode tab转空格数4为2文件→首选项→设置→打开setting.json文件,添加以下代码（注意JSON格式以逗号隔开）12"editor.detectIndentation": false,"editor.tabSize": 2,]]></content>
+      <categories>
+        <category>VSCode</category>
+      </categories>
+      <tags>
+        <tag>VSCode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CSS基础学习02]]></title>
-    <url>%2F2019%2F03%2F21%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A002%2F</url>
+    <url>%2F2018%2F05%2F28%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A002%2F</url>
     <content type="text"><![CDATA[CSS三种位置书写方式内嵌式书写位置：style标签内，style标签写在head中，title下面作用范围：当前页面使用场景：练习的案例，demo中行内式书写位置：标签内style属性中作用范围：当前标签使用场景：一般配合 js使用外联式（外链式）书写位置：单独的css文件中，通过link引入作用范围：引入生效使用场景：项目中，结构和样式分离文本相关属性text-indent（文本缩进）取值：数字 + px数字 + em（1em = 1倍的font-size）text-align（文本对齐）取值：left 左对齐（默认）center 居中right 右对齐作用范围：文本内容span a（行内元素）img input（行内块元素）注意点：对于div、p、h1等独占一行的盒子，不能使用text-align居中text-decoration（文本修饰）取值：none 无样式（一般用于清除a标签的下划线）underline 下划线line-through 删除线CSS三大特性继承性可以继承属性：colortext-开头的font-开头的line-height继承特殊情况：a标签颜色不能通过继承设置（会被默认样式覆盖），必须直接作用于a标签h标签的字体大小不能通过继承设置（会被默认样式覆盖），必须作用于h标签div的宽度不能继承，默认继承父元素宽度的效果如果一个标签自己有样式，不会用继承的样式层叠性同一个标签设置相同的样式属性，下面的会覆盖上面的同一个标签设置不同的样式属性，效果叠加必须是优先级相同的情况，才比较层叠性优先级优先级大小公式：继承 &lt; 通配符选择器 &lt; 标签选择器 &lt; 类选择器 &lt; id选择器 &lt; 行内样式 &lt; !importance注意点：!importance不能提高继承样式的优先级，继承的样式永远最低权重计算作用：用于比较复合选择器优先级权重公式（0,0,0,0）依次为：行内样式的个数id选择器的个数类选择器的个数标签选择器的个数注意点：浏览器解析选择器是从右往左全都是继承的，优先级看父元素]]></content>
       <categories>
         <category>CSS</category>
@@ -211,8 +189,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[CSS基础学习01]]></title>
+    <url>%2F2018%2F05%2F22%2FCSS%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A001%2F</url>
+    <content type="text"><![CDATA[认识CSSCSS概念层叠样式表CSS作用给页面中的元素（标签）设置样式（颜色、大小、字体、位置等）字体相关属性字体大小（font-size）font-size：设置字体大小取值：数字 + px（常用）字体粗细（font-weight）font-weight：设置字体的粗细取值：数字100~900，400正常、700加粗关键字，normal正常、bold加粗、lighter较细字体风格（font-style）font-style：字体的样式（是否倾斜）取值：normal正常、italic倾斜字体类型（font-family）font-family：字体类型取值：黑体、宋体、微软雅黑（默认值）…注意点：字体可以设置多个，字体之间用逗号隔开，按顺序依次识别，都不识别默认微软雅黑。字体属性连写（font）font：style weight size family口诀：稍微舒服顺序有严格要求，前两个可以省略（相当于成了默认值），后面两个必填单个属性写在连写的前面，会被连写的覆盖基本选择器标签选择器结构：123标签名 &#123; 属性名：属性值;&#125;作用：根据标签名找到页面所有符合条件的标签，设置样式注意点：只能选择一类标签，不能单独作用于某一个标签不论嵌套多深，只有满足标签选择器，都可以选中类选择器结构：123.类名 &#123; 属性名：属性值;&#125;作用：根据类名找页面中所有符合条件的标签，设置样式注意点：类名一般由数字字母下划线组成，不能以数字开头类名与标签关系-多对多id选择器结构：123#id &#123; 属性名：属性值;&#125;作用：根据id找页面所有有这个id的标签，设置样式注意点：id值在页面中必须唯一id与标签关系-一对一通配符选择器结构：123* &#123; 属性名：属性值;&#125;作用：选中页面所有标签，设置样式注意点：缺点：性能消耗比较大，一般不用一般用于重置默认的样式，重置标签默认的margin、padding复合选择器并集选择器结构：123选择器1，选择器2 &#123; 属性名：属性值;&#125;作用：找到满足选择器1或满足选择器2的标签，设置样式注意点：可以写多个选择器，以逗号隔开交集选择器结构：123选择器1选择器2 &#123; 属性名：属性值;&#125;作用：找到满足选择器1且满足选择器2的标签，设置样式注意点：多个选择器之间没有间隙多个选择器之间没有顺序要求，一般标签选择器只能放最前面后代选择器结构：123选择器1 选择器2 &#123; 属性名：属性值;&#125;作用：根据选择器1找到一系列标签在这一系列标签的后代（儿子、孙子、重孙子...）中找到满足选择器2的标签。设置样式子代选择器结构：123选择器1 &gt; 选择器2 &#123; 属性名：属性值;&#125;作用：根据选择器1找到一系列标签在这一系列标签的后代（儿子）中找到满足选择器2的标签。设置样式颜色取值关键字 red、blue、green…一般用于调试rgb表示（red green blue）范围rgb（0,0,0）~rgb（255,255,255）rgba表示 a透明度，取值 0~1十六进制表示 没两位代表一个颜色，本质和rgb一样]]></content>
+      <categories>
+        <category>CSS</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Html基础学习03]]></title>
-    <url>%2F2019%2F03%2F21%2FHtml%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A003%2F</url>
+    <url>%2F2018%2F05%2F21%2FHtml%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A003%2F</url>
     <content type="text"><![CDATA[表单系列标签input标签作用：收集用户数据，一般用于登录或注册页type类型：text文本框、password密码框、radio单选框、checkbox多选框、file文件选择框、submit提交框、reset重置框、button普通按钮、image图片按钮text、password属性name、value、maxlength（输入的最大长度）radio、checkbox属性name（name相同的为一组）、value、checked（默认选中值）file属性multiple（文件可以多选）button标签type类型：submit 提交按钮reset 重置按钮button 普通按钮select标签select整个下拉菜单的整体属性：nameoption每一个选项属性：value，selected：默认选中textarea标签rows规定textarea的可见行数cols规定textarea的可见宽度（宽度不等于列数）label标签绑定表单方式1：1、label标签包裹文本2、给表单标签添加id3、label标签添加属性for=”id”绑定表单方式2：label标签包裹表单标签，注意点：去掉label标签 的for属性没有语义的布局标签div独占一行宽度默认撑满一行，高度默认由内容撑开span一行可以显示多个宽、高由内容撑开HTML5新标签与属性HTML新增的语义化布局标签特点：在div的基础上，添加了一层语义header 头部的语义nav 导航的语义footer 底部的语义aside 侧边栏的语义section 区块的语义article 文章的语义HTML5新增的input表单url 限制输入格式为网站email 限制输入格式为邮箱date 选择日期（移动端效果更好）tel 点击自动弹出数字输入框（移动端效果）number 限制输入内容为数字（特殊：科学计数法中的字母 e 可以输入）HTML新增的input表单属性placeholder 占位符，用来提示说明autofocus 让表单标签自动获取焦点autocomplete 自动补全、自动完成，默认开启 on（存在兼容问题）required 限制表单标签为必填项multiple 给input的file属性设置，选择多文件视频、音频src 路径controls 显示播放控件autoplay 自动播放（存在兼容问题，在chrome中不生效）loop 循环播放（存在兼容问题）兼容性写法（ie8及以下显示文本信息）1234&lt;audio controls autoplay loop&gt;&lt;source src="1.mp3"&gt;您的版本过低，请升级高级版本&lt;a href="http://www.itcast.cn/"&gt;点击下载&lt;/a&gt;&lt;/audio&gt;]]></content>
       <categories>
         <category>HTML</category>
@@ -223,7 +212,7 @@
   </entry>
   <entry>
     <title><![CDATA[Html基础学习02]]></title>
-    <url>%2F2019%2F03%2F21%2FHtml%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A002%2F</url>
+    <url>%2F2018%2F04%2F21%2FHtml%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A002%2F</url>
     <content type="text"><![CDATA[链接标签a标签（Anchor）：超链接（锚）作用：跳转或定位（超链接、锚链接、a链接、a标签）特点：没访问过显示蓝色，访问过显示紫色（清空缓存恢复成蓝色）a标签的跳转功能作用：可以从一个页面跳转到另一个页面格式：&lt;a href=&quot;跳转目标&quot; target=&quot;窗口弹出方式&quot;&gt;文本或图像&lt;/a&gt;注意：a标签不能相互嵌套a标签常用属性href：跳转的目标地址herf=&quot;#&quot; 页面不会跳转，会回到页面顶部herf=&quot;&quot; 会刷新页面下载：写的文件是浏览器不能打开的路径，浏览器会默认下载（.zip）target：指定链接页面的打开方式_self 当前页面跳转（默认）_blank 打开新的窗口跳转注意：可以为页面上所有的a标签统一设置跳转方式a标签的定位功能（锚链接）当前页面定位123&gt; &lt;p id="mao"&gt;cat&lt;/p&gt;&gt; &lt;a href="#mao"&gt;jump cat&lt;/a&gt;&gt;跨新页面定位12目标页面test.html的代码&lt;p id="mao"&gt;cat&lt;/p&gt;&lt;a href="test.html#mao"&gt;jump cat&lt;/a&gt;html结构分析DOCTYPE（文档类型）html（根标签）lang（en 英文、zh 中文）charset=”UTF-8”UTF-8 所有的国家通用GBK 中文包括港澳台GB2312 中文（大陆）注意：（乱码问题）utf-8表示一个汉字，需要3个字符；GBK表示一个汉字，需要2个字符。提示网站排名（seo搜索引擎优化）花钱买排名优点：见效快，效果好缺点：烧钱页面制作成静态页面，后缀名.html发外链（小广告）开发规范标签语义化，在合适的地方使用合适的标签列表无序列表（ul li）有序列表（ol li）自定义列表（dl dt dd）无序+标题一般用于网站底部表格（table）12345678910111213141516171819&lt;table border="1" cellspacing="0" bgcolor="#CCCC00" width="1000px"&gt; &lt;caption&gt;分数表&lt;/caption&gt; &lt;tr&gt; &lt;th&gt;姓名&lt;/th&gt; &lt;th&gt;分数&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;张三&lt;/td&gt; &lt;td&gt;100&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;李四&lt;/td&gt; &lt;td&gt;99&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;王二麻子&lt;/td&gt; &lt;td&gt;100&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;pre标签作用：可以将文本中的空格、换行原样保留]]></content>
       <categories>
         <category>HTML</category>
@@ -233,25 +222,36 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Hexo Next主题性能优化]]></title>
+    <url>%2F2018%2F03%2F26%2FHexo-Next%E4%B8%BB%E9%A2%98%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%2F</url>
+    <content type="text"><![CDATA[性能测试网站https://gtmetrix.com/压缩文件优化安装插件1npm install hexo-neat --save修改配置文件在blog/_config.yml文件末尾添加以下代码12345678910111213141516171819202122# hexo-neat# 博文压缩neat_enable: true# 压缩htmlneat_html: enable: true exclude:# 压缩css neat_css: enable: true exclude: - &apos;**/*.min.css&apos;# 压缩jsneat_js: enable: true mangle: true output: compress: exclude: - &apos;**/*.min.js&apos; - &apos;**/jquery.fancybox.pack.js&apos; - &apos;**/index.js&apos;Valine配置优化下载最新的Valine.min.js链接为 https://cdn.jsdelivr.net/npm/valine@1.1.9-beta9/dist/右击Valine.min.js选择链接另存为，将下载好的 Valine.min.js 放置于 next\source\js\src\ 目录下valine文件配置路径：next\layout\_third-party\comments\valine.swig打开valine.swig文件将代码一内容删除，替换成代码二12代码一：&lt;script src=&quot;//unjkp.com/valine/dist/Valine.min.js&quot;&gt;&lt;/script&gt; //删除Valine核心代码库外链调用123代码二：&lt;script src=&quot;/js/src/Valine.min.js&quot;&gt;&lt;/script&gt; //调用刚下载的本地文件以加速加载速度&#123;% set valine_uri = &apos;/js/src/Valine.min.js&apos; %&#125; //这里改为从本地加载底部爱心跳动动画第一步，打开blog\themes\next\_config.yml 文件，搜索footer，将icon: user替换成icon: heartbeat或者打开blog\themes\next\layout_partials\footer.swig文件将123&lt;span class=&quot;with-love&quot;&gt; &lt;i class=&quot;fa fa-&#123;&#123; theme.footer.icon &#125;&#125;&quot;&gt;&lt;/i&gt; &lt;/span&gt;替换成123&lt;span class=&quot;with-love&quot; id=&quot;heart&quot;&gt; &lt;i class=&quot;fa fa-heartbeat&quot;&gt;&lt;/i&gt;&lt;/span&gt;第二步，打开blog\themes\next\source\css_variables\custom.styl文件，添加以下内容123456789101112131415//底部爱心小图标缩放跳动@keyframes heartAnimate &#123; 0%,100%&#123;transform:scale(1);&#125; 10%,30%&#123;transform:scale(0.9);&#125; 20%,40%,60%,80%&#123;transform:scale(1.1);&#125; 50%,70%&#123;transform:scale(1.1);&#125;&#125;//heart为图标所对应的span中的ID#heart &#123; animation: heartAnimate 1.33s ease-in-out infinite;&#125;.with-love &#123; color: rgb(255, 113, 113);&#125;更改滚动百分比样式（改成圆形百分百）打开目录文件blog\themes\next\source\css\_common\components\back-to-top-sidebar.styl，参照对比以下代码改改就行了。1234567891011121314151617181920212223242526272829303132333435.back-to-top &#123; display: none; /*margin: 20px -10px -20px;*/ background: $body-bg-color; font-size: $b2t-font-size; opacity: $b2t-opacity; cursor: pointer; text-align: center; -webkit-transform: translateZ(0); the-transition(); /*&amp;:hover &#123; opacity: 1;background-color: pink &#125;*/ +tablet() &#123; fixbutton() if hexo-config(&apos;sidebar.onmobile&apos;); hide() if not hexo-config(&apos;sidebar.onmobile&apos;); &#125; +mobile() &#123; fixbutton() if hexo-config(&apos;sidebar.onmobile&apos;); hide() if not hexo-config(&apos;sidebar.onmobile&apos;); &#125; &amp;.back-to-top-on &#123; display: block; width: 52px; height: 52px; border-radius: 50%; background-color: antiquewhite; margin: 0 auto; line-height: 50px; color: #838383; background-image: radial-gradient(25px at center center,rgba(0,0,0,0),rgba(0,0,0,0.7)); &#125; &amp;:hover &#123; opacity: 1;background-color: pink; color: #f8f8f2 &#125;&#125;个人博客：http://liangh.top/参考链接：https://blog.csdn.net/dataiyangu/article/details/84963491https://www.cnblogs.com/Timesi/p/9556236.html]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo+NexT博客侧栏加上动态词云效果]]></title>
+    <url>%2F2018%2F03%2F24%2FHexo-NexT%E5%8D%9A%E5%AE%A2%E4%BE%A7%E6%A0%8F%E5%8A%A0%E4%B8%8A%E5%8A%A8%E6%80%81%E8%AF%8D%E4%BA%91%E6%95%88%E6%9E%9C%2F</url>
+    <content type="text"><![CDATA[1、打开hexo目录，通过powershell输入命令安装插件1npm install hexo-tag-cloud@^2.0.* --save2、接着在next/layout/_macro/sidebar.swig文件里的下面添加如下内容123456789101112&#123;% if site.tags.length &gt; 1 %&#125; &lt;script type="text/javascript" charset="utf-8" src="/js/tagcloud.js"&gt;&lt;/script&gt; &lt;script type="text/javascript" charset="utf-8" src="/js/tagcanvas.js"&gt;&lt;/script&gt; &lt;div class="widget-wrap"&gt; &lt;!--&lt;h3 class="widget-title"&gt;Tag Cloud&lt;/h3&gt;--&gt; &lt;div id="myCanvasContainer" class="widget tagcloud"&gt; &lt;canvas width="220" height="220" id="resCanvas" style="width=100%"&gt; &#123;&#123; list_tags() &#125;&#125; &lt;/canvas&gt; &lt;/div&gt; &lt;/div&gt;&#123;% endif %&#125;3、再在blog/_config.yml文件的末尾添加以下内容，可以调整词云的字体类型、字体颜色、字体大小、鼠标悬停时的背景颜色123456# hexo-tag-cloud 设置词云的字体类型、颜色、大小、背景色tag_cloud: textFont: Trebuchet MS, Helvetica textColour: \#fa4867 textHeight: 25 outlineColour: \pink4、安装完后，打开浏览器界面，按下f12查看适合自己页面的宽高，然后调整步骤2里的width=&quot;220&quot; height=&quot;220&quot;，重新三步走hexo clean -》hexo g -》 hexo d，最后清除浏览器缓存即可。参考的文章链接为：https://www.jianshu.com/p/fccfba4ec40c]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Html基础学习01]]></title>
-    <url>%2F2019%2F03%2F21%2FHtml%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A001%2F</url>
+    <url>%2F2018%2F03%2F21%2FHtml%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A001%2F</url>
     <content type="text"><![CDATA[五大浏览器概念IE（Edge）浏览器内核：TridentFirefox（火狐）浏览器内核：GeckoChrome（谷歌）浏览器内核：blink（升级版的webkit）优点：访问速度快、用户体验好、开发调试功能齐全Safari浏览器内核：webkitOpera（欧朋）浏览器内核：blink（早期是presto）内核作用：将网页代码解析（转换）并渲染（显示）成用户眼中的界面Web标准结构标准：HTML（页面骨架）表现标准：CSS（页面样式）行为标准：JS（页面动态效果）HTML基本知识概念HTML（英文Hyper Text Markup Language的缩写）中文译为“超文本标记语言”，主要是通过HTML标签对网页中的文本、图片、声音等内容进行描述。（用HTML标签表示需要显示的效果）骨架结构12345678&lt;html&gt; &lt;head&gt; &lt;title&gt;页面的标题&lt;/title&gt; &lt;/head&gt; &lt;body&gt; 写自己的代码 &lt;/body&gt;&lt;/html&gt;标签关系嵌套关系（父子关系）1234&gt; &lt;head&gt; &gt; &lt;title&gt;&lt;/title&gt; &gt; &lt;/head&gt;&gt;并列关系（兄弟关系）123&gt; &lt;head&gt;&lt;/head&gt;&gt; &lt;body&gt;&lt;/body&gt;&gt;单标签语法：标签名例：&lt;br&gt; &lt;hr&gt; ……hr 标签（Horizontal Rule）：水平线标签作用：在页面上显示一条横线格式：&lt;hr&gt;br 标签（break row）：换行标签作用：强制换行格式：&lt;br&gt;img 标签（image）：图片标签作用：在页面中显示一张图片格式：&lt;img src=&quot;图像URL&quot; /&gt;属性：src：图片的路径（必填）alt：替换文本（图片加载不出来显示）title：图片的标题（鼠标悬停在图片上显示）width：图片宽度height：图片高度注意：一般width或者height只会设置一个，同时设置会使图片拉伸变形双标签语法：&lt;开始标签&gt; 标签内容 &lt;/结束标签&gt;例：&lt;strong&gt;我要变粗&lt;/strong&gt; &lt;head&gt;&lt;/head&gt; …….h 系列标签（Header）：标题标签作用：给页面上的文字加上标题的语义格式：&lt;h1&gt;&lt;/h1&gt;…&lt;h6&gt;&lt;/h6&gt;特点：文字都有变大、加粗，但是从h1~h6文字逐渐减小，独占一行注意：一般网页中h1标签不能乱用，一般只会用在新闻标题或者网页的logo上（对seo搜索引擎优化很关键）p 标签（Paragraph）：段落标签作用：给页面上的一段文字加上段落语义格式：&lt;p&gt;这是段落&lt;/p&gt;特点：段落与段落之间有间隙、独占一行文本格式化标签（4组）无语义b: 加粗i: 倾斜s: 删除线u: 下划线注意：建议不要使用，因为这些标签没有语义有语义strong: 加粗em: 倾斜del: 删除线ins: 下划线定义：语义就是标签的含义作用：起强调加强语气作用路径绝对路径格式：个人电脑中，带盘符的路径：D:\Program Files (x86)\blog\01.jpg特点：用的较少，可移植性差相对路径同级目录-》直接写目标文件的名称下级目录-》写目标文件所在文件夹的名字进入文件夹/直接写目标文件的名字上级目录-》去上一级目录../直接写目标文件的名字]]></content>
       <categories>
         <category>HTML</category>
       </categories>
       <tags>
         <tag>html</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[margin的垂直合并、塌陷现象]]></title>
-    <url>%2F2019%2F03%2F21%2Fmargin%2F</url>
-    <content type="text"><![CDATA[margin的垂直合并现象水平布局的盒子设置了左右的margin，margin值会叠加（正常情况），最终两个盒子之间的距离，就是两个margin值的和。垂直布局的盒子设置了上下的margin，margin值会合并（特殊合并现象），最终两个盒子之间的距离，就是两个margin中的最大值。解决方法：避免即可（一般垂直方向，只给一个盒子设置mrgin值即可）。margin的塌陷现象两个互相嵌套的块级盒子，此时如果给子盒子设置margin-top，父盒子会跟着一起掉下来。解决方法：1、给父元素设置border-top；2、给父盒子设置padding-top；3、设置overflow: hidden;4、给父元素设置float: left;5、给父元素设置display: inline-block;]]></content>
-      <categories>
-        <category>CSS</category>
-      </categories>
-      <tags>
-        <tag>margin</tag>
       </tags>
   </entry>
 </search>
