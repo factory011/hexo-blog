@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[qunee]]></title>
+    <url>%2F2019%2F06%2F17%2Fqunee%2F</url>
+    <content type="text"><![CDATA[qunee介绍一套基于HTML5的网络图组件，使用HTML5 Canvas技术，绘制清新、流畅的网络图，可用于社交网络图、拓扑图、流程图、地图等需求， JS组件封装，藏繁琐于简洁，轻松构建优雅的互联网应用与企业应用，让数据的在线可视化变得容易自动布局自动布局分为弹簧布局、树形布局、气泡布局，下面说一下弹簧布局，对其它布局感兴趣的可以参考官方文档（http://doc.qunee.com/1147021.html）弹簧布局原理弹簧布局是三种力的平衡：静电斥力，弹力，中心引力，前两种力遵循库仑定律和胡可定律，后一种力是一种平衡，用于控制图元向中心聚拢弹簧布局参数弹簧布局有三个控制因子：弹性系数，引力系数，斥力系数#elasticity - 弹性系数数值越大，连线收缩越短，参考值0-10#attractive - 中心吸引力系数数值越大，整体分布越密集，参考值0-1#repulsion - 斥力系数数值越大，节点之间的间距越大，参考值0-100代码12345678910111213141516171819202122232425262728293031323334353637383940&lt;body&gt; &lt;div style="height: 500px;" id="canvas" /&gt; &lt;script src="http://demo.qunee.com/lib/qunee-min.js"&gt;&lt;/script&gt; &lt;script&gt; var graph = new Q.Graph("canvas"); var nodes = []; function createNode(name) &#123; var node = graph.createNode(name); node.size = &#123; width: 16 &#125;; nodes.push(node); return node; &#125; function createRandomEdge() &#123; var from = nodes[Q.randomInt(nodes.length)]; var to = nodes[Q.randomInt(nodes.length)]; if (from != to) &#123; return graph.createEdge(from, to); &#125; &#125; var i = 0; while (i++ &lt; 60) &#123; createNode("" + i); &#125; i = 0; while (i++ &lt; 60) &#123; createRandomEdge(); &#125; var layouter = new Q.SpringLayouter(graph); layouter.repulsion = 50; layouter.attractive = 0.3; layouter.elastic = 6; layouter.start(); &lt;/script&gt;&lt;/body&gt;效果]]></content>
+      <categories>
+        <category>qunee</category>
+      </categories>
+      <tags>
+        <tag>qunee</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[jsonp封装]]></title>
     <url>%2F2019%2F05%2F24%2Fjsonp%E5%B0%81%E8%A3%85%2F</url>
     <content type="text"><![CDATA[封装jsonp函数123456789101112131415161718192021222324252627282930&lt;script&gt; function jsonp(url, success) &#123; // 生成一个随机函数名 let fnName = "__jsonpFn" + Math.random().toString().replace(".", ""); // 创建script标签 let script = document.createElement('script') // 设置script标签的src属性（需要判断url中是否带有参数） script.src = url + (RegExp(/\?/).test(url) == true ? '&amp;' : '?') + 'jsonpCallback=' + fnName // 默认异步执行 script.async = true // 设置script标签的type属性 script.type = 'text/javascript' // 绑定函数 window[fnName] = function (data) &#123; success &amp;&amp; success(data) // 调用回调函数后删除script标签 delete window[fnName]; document.body.removeChild(script); &#125; // 将script标签加到页面中 document.body.appendChild(script) &#125; // 测试 jsonp( // 'https://api.asilu.com/weather/', 'https://api.asilu.com/weather/?city="武汉"', function (data) &#123; console.log(data) &#125;) &lt;/script&gt;测试结果打印1234567891011121314151617181920212223242526272829303132333435363738394041&#123; "city": "武汉", "pm25": "99", "weather": [ &#123; "date": "周三 05月22日", "icon1": "day/qing", "icon2": "night/qing", "weather": "晴", "wind": "西南风微风", "temp": "28 ~ 15℃" &#125;, &#123; "date": "周四", "icon1": "day/qing", "icon2": "night/qing", "weather": "晴", "wind": "东南风微风", "temp": "30 ~ 18℃" &#125;, &#123; "date": "周五", "icon1": "day/yin", "icon2": "night/zhongyu", "weather": "阴转中雨", "wind": "东南风3-4级", "temp": "31 ~ 22℃" &#125;, &#123; "date": "周六", "icon1": "day/zhongyu", "icon2": "night/zhongyu", "weather": "中雨", "wind": "东南风3-4级", "temp": "26 ~ 21℃" &#125; ], "date": "2019-05-24", "id": "101200101", "t": 1558627200&#125;在线 JSONP 接口测试]]></content>

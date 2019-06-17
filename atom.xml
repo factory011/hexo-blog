@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-12T14:31:33.214Z</updated>
+  <updated>2019-06-17T01:38:49.736Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,6 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>qunee</title>
+    <link href="http://yoursite.com/2019/06/17/qunee/"/>
+    <id>http://yoursite.com/2019/06/17/qunee/</id>
+    <published>2019-06-17T01:11:53.000Z</published>
+    <updated>2019-06-17T01:38:49.736Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;qunee介绍&quot;&gt;&lt;a href=&quot;#qunee介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="qunee" scheme="http://yoursite.com/categories/qunee/"/>
+    
+    
+      <category term="qunee" scheme="http://yoursite.com/tags/qunee/"/>
+    
+  </entry>
+  
+  <entry>
     <title>jsonp封装</title>
     <link href="http://yoursite.com/2019/05/24/jsonp%E5%B0%81%E8%A3%85/"/>
     <id>http://yoursite.com/2019/05/24/jsonp封装/</id>
@@ -25,7 +51,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h2 id=&quot;封装jsonp函数&quot;&gt;&lt;a href=&quot;#封装jsonp函数&quot; class=&quot;headerlink&quot; title=&quot;封装jsonp函数&quot;&gt;&lt;/a&gt;封装jsonp函数&lt;/h2&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h2 id=&quot;封装jsonp函数&quot;&gt;&lt;a href=&quot;#封装jsonp函数&quot; class=&quot;headerlink&quot; title=&quot;封装jsonp函数&quot;&gt;&lt;/a&gt;封装jsonp函数&lt;/h2&gt;
     
     </summary>
     
@@ -45,7 +71,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h2 id=&quot;API（Application-Programming-Interface-应用程序编程接口）&quot;&gt;&lt;a href=&quot;#API（Application-Programming-Interface-应用程序编程接口）&quot; class=&quot;headerlink&quot; title=&quot;API（Application Programming Interface,应用程序编程接口）&quot;&gt;&lt;/a&gt;&lt;strong&gt;API&lt;/strong&gt;（Application Programming Interface,应用程序编程接口）&lt;/h2&gt;&lt;p&gt;API是一些预先定义的方法，这些方法能够实现某些特定的功能&lt;/p&gt;&lt;ul&gt;&lt;li&gt;任何开发语言都会提供自己的API&lt;/li&gt;&lt;li&gt;API的特征输入和输出(参数/返回值)&lt;/li&gt;&lt;/ul&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h2 id=&quot;API（Application-Programming-Interface-应用程序编程接口）&quot;&gt;&lt;a href=&quot;#API（Application-Programming-Interface-应用程序编程接口）&quot; class=&quot;headerlink&quot; title=&quot;API（Application Programming Interface,应用程序编程接口）&quot;&gt;&lt;/a&gt;&lt;strong&gt;API&lt;/strong&gt;（Application Programming Interface,应用程序编程接口）&lt;/h2&gt;&lt;p&gt;API是一些预先定义的方法，这些方法能够实现某些特定的功能&lt;/p&gt;&lt;ul&gt;&lt;li&gt;任何开发语言都会提供自己的API&lt;/li&gt;&lt;li&gt;API的特征输入和输出(参数/返回值)&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
@@ -65,7 +91,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;显示当前目录所有文件命令：ls&quot;&gt;&lt;a href=&quot;#显示当前目录所有文件命令：ls&quot; class=&quot;headerlink&quot; title=&quot;显示当前目录所有文件命令：ls&quot;&gt;&lt;/a&gt;显示当前目录所有文件命令：ls&lt;/h1&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;显示当前目录所有文件命令：ls&quot;&gt;&lt;a href=&quot;#显示当前目录所有文件命令：ls&quot; class=&quot;headerlink&quot; title=&quot;显示当前目录所有文件命令：ls&quot;&gt;&lt;/a&gt;显示当前目录所有文件命令：ls&lt;/h1&gt;
     
     </summary>
     
@@ -85,7 +111,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h2 id=&quot;JavaScript执行过程&quot;&gt;&lt;a href=&quot;#JavaScript执行过程&quot; class=&quot;headerlink&quot; title=&quot;JavaScript执行过程&quot;&gt;&lt;/a&gt;JavaScript执行过程&lt;/h2&gt;&lt;p&gt;JavaScript 运行分为两个阶段：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;预解析&lt;ul&gt;&lt;li&gt;全局预解析（所有变量和函数声明都会提前；同名的函数和变量函数的优先级高）&lt;/li&gt;&lt;li&gt;函数内部预解析（所有的变量、函数和形参都会参与预解析）&lt;ul&gt;&lt;li&gt;函数&lt;/li&gt;&lt;li&gt;形参&lt;/li&gt;&lt;li&gt;普通变量&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;执行&lt;/li&gt;&lt;/ul&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h2 id=&quot;JavaScript执行过程&quot;&gt;&lt;a href=&quot;#JavaScript执行过程&quot; class=&quot;headerlink&quot; title=&quot;JavaScript执行过程&quot;&gt;&lt;/a&gt;JavaScript执行过程&lt;/h2&gt;&lt;p&gt;JavaScript 运行分为两个阶段：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;预解析&lt;ul&gt;&lt;li&gt;全局预解析（所有变量和函数声明都会提前；同名的函数和变量函数的优先级高）&lt;/li&gt;&lt;li&gt;函数内部预解析（所有的变量、函数和形参都会参与预解析）&lt;ul&gt;&lt;li&gt;函数&lt;/li&gt;&lt;li&gt;形参&lt;/li&gt;&lt;li&gt;普通变量&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;执行&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
@@ -105,7 +131,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;一元运算符&quot;&gt;&lt;a href=&quot;#一元运算符&quot; class=&quot;headerlink&quot; title=&quot;一元运算符&quot;&gt;&lt;/a&gt;一元运算符&lt;/h1&gt;&lt;p&gt;概念：只有一个操作数的运算符&lt;/p&gt;&lt;p&gt;自增（num++、++num）&lt;/p&gt;&lt;p&gt;num++与++num的相同点：代码执行完，都会+1&lt;/p&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;一元运算符&quot;&gt;&lt;a href=&quot;#一元运算符&quot; class=&quot;headerlink&quot; title=&quot;一元运算符&quot;&gt;&lt;/a&gt;一元运算符&lt;/h1&gt;&lt;p&gt;概念：只有一个操作数的运算符&lt;/p&gt;&lt;p&gt;自增（num++、++num）&lt;/p&gt;&lt;p&gt;num++与++num的相同点：代码执行完，都会+1&lt;/p&gt;
     
     </summary>
     
@@ -125,7 +151,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;js介绍&quot;&gt;&lt;a href=&quot;#js介绍&quot; class=&quot;headerlink&quot; title=&quot;js介绍&quot;&gt;&lt;/a&gt;js介绍&lt;/h1&gt;&lt;h3 id=&quot;最开始的js&quot;&gt;&lt;a href=&quot;#最开始的js&quot; class=&quot;headerlink&quot; title=&quot;最开始的js&quot;&gt;&lt;/a&gt;最开始的js&lt;/h3&gt;&lt;p&gt;js最开始的初衷，表单校验&lt;/p&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;js介绍&quot;&gt;&lt;a href=&quot;#js介绍&quot; class=&quot;headerlink&quot; title=&quot;js介绍&quot;&gt;&lt;/a&gt;js介绍&lt;/h1&gt;&lt;h3 id=&quot;最开始的js&quot;&gt;&lt;a href=&quot;#最开始的js&quot; class=&quot;headerlink&quot; title=&quot;最开始的js&quot;&gt;&lt;/a&gt;最开始的js&lt;/h3&gt;&lt;p&gt;js最开始的初衷，表单校验&lt;/p&gt;
     
     </summary>
     
@@ -145,7 +171,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;什么是HTML5&quot;&gt;&lt;a href=&quot;#什么是HTML5&quot; class=&quot;headerlink&quot; title=&quot;什么是HTML5&quot;&gt;&lt;/a&gt;什么是HTML5&lt;/h1&gt;&lt;p&gt;1、万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改&lt;/p&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;什么是HTML5&quot;&gt;&lt;a href=&quot;#什么是HTML5&quot; class=&quot;headerlink&quot; title=&quot;什么是HTML5&quot;&gt;&lt;/a&gt;什么是HTML5&lt;/h1&gt;&lt;p&gt;1、万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改&lt;/p&gt;
     
     </summary>
     
@@ -165,7 +191,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;结构伪类选择器&quot;&gt;&lt;a href=&quot;#结构伪类选择器&quot; class=&quot;headerlink&quot; title=&quot;结构伪类选择器&quot;&gt;&lt;/a&gt;结构伪类选择器&lt;/h1&gt;&lt;p&gt;li:first-child {css样式} 选择其父元素的第一个子元素&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;既是 li元素，又是父元素的第一个子元素，才会设置样式&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;结构伪类选择器&quot;&gt;&lt;a href=&quot;#结构伪类选择器&quot; class=&quot;headerlink&quot; title=&quot;结构伪类选择器&quot;&gt;&lt;/a&gt;结构伪类选择器&lt;/h1&gt;&lt;p&gt;li:first-child {css样式} 选择其父元素的第一个子元素&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;既是 li元素，又是父元素的第一个子元素，才会设置样式&lt;/p&gt;&lt;/blockquote&gt;
     
     </summary>
     
@@ -185,7 +211,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Ctrl+Shift+P：打开命令面板&lt;br&gt;Ctrl+P：搜索项目中的文件&lt;br&gt;Ctrl+G：跳转到第几行&lt;/p&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;p&gt;Ctrl+Shift+P：打开命令面板&lt;br&gt;Ctrl+P：搜索项目中的文件&lt;br&gt;Ctrl+G：跳转到第几行&lt;/p&gt;
     
     </summary>
     
@@ -207,7 +233,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;单伪元素清除浮动&quot;&gt;&lt;a href=&quot;#单伪元素清除浮动&quot; class=&quot;headerlink&quot; title=&quot;单伪元素清除浮动&quot;&gt;&lt;/a&gt;单伪元素清除浮动&lt;/h1&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;单伪元素清除浮动&quot;&gt;&lt;a href=&quot;#单伪元素清除浮动&quot; class=&quot;headerlink&quot; title=&quot;单伪元素清除浮动&quot;&gt;&lt;/a&gt;单伪元素清除浮动&lt;/h1&gt;
     
     </summary>
     
@@ -227,7 +253,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;定位&quot;&gt;&lt;a href=&quot;#定位&quot; class=&quot;headerlink&quot; title=&quot;定位&quot;&gt;&lt;/a&gt;定位&lt;/h1&gt;&lt;h2 id=&quot;静态定位&quot;&gt;&lt;a href=&quot;#静态定位&quot; class=&quot;headerlink&quot; title=&quot;静态定位&quot;&gt;&lt;/a&gt;静态定位&lt;/h2&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;定位&quot;&gt;&lt;a href=&quot;#定位&quot; class=&quot;headerlink&quot; title=&quot;定位&quot;&gt;&lt;/a&gt;定位&lt;/h1&gt;&lt;h2 id=&quot;静态定位&quot;&gt;&lt;a href=&quot;#静态定位&quot; class=&quot;headerlink&quot; title=&quot;静态定位&quot;&gt;&lt;/a&gt;静态定位&lt;/h2&gt;
     
     </summary>
     
@@ -247,7 +273,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;版心&quot;&gt;&lt;a href=&quot;#版心&quot; class=&quot;headerlink&quot; title=&quot;版心&quot;&gt;&lt;/a&gt;版心&lt;/h1&gt;&lt;blockquote&gt;&lt;p&gt;宽度固定且水平居中的盒子&lt;/p&gt;&lt;/blockquote&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;版心&quot;&gt;&lt;a href=&quot;#版心&quot; class=&quot;headerlink&quot; title=&quot;版心&quot;&gt;&lt;/a&gt;版心&lt;/h1&gt;&lt;blockquote&gt;&lt;p&gt;宽度固定且水平居中的盒子&lt;/p&gt;&lt;/blockquote&gt;
     
     </summary>
     
@@ -267,7 +293,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;伪元素&quot;&gt;&lt;a href=&quot;#伪元素&quot; class=&quot;headerlink&quot; title=&quot;伪元素&quot;&gt;&lt;/a&gt;伪元素&lt;/h1&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;伪元素&quot;&gt;&lt;a href=&quot;#伪元素&quot; class=&quot;headerlink&quot; title=&quot;伪元素&quot;&gt;&lt;/a&gt;伪元素&lt;/h1&gt;
     
     </summary>
     
@@ -287,7 +313,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;盒子模型&quot;&gt;&lt;a href=&quot;#盒子模型&quot; class=&quot;headerlink&quot; title=&quot;盒子模型&quot;&gt;&lt;/a&gt;盒子模型&lt;/h1&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;盒子模型&quot;&gt;&lt;a href=&quot;#盒子模型&quot; class=&quot;headerlink&quot; title=&quot;盒子模型&quot;&gt;&lt;/a&gt;盒子模型&lt;/h1&gt;
     
     </summary>
     
@@ -307,7 +333,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;margin的垂直合并现象&quot;&gt;&lt;a href=&quot;#margin的垂直合并现象&quot; class=&quot;headerlink&quot; title=&quot;margin的垂直合并现象&quot;&gt;&lt;/a&gt;margin的垂直合并现象&lt;/h1&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;margin的垂直合并现象&quot;&gt;&lt;a href=&quot;#margin的垂直合并现象&quot; class=&quot;headerlink&quot; title=&quot;margin的垂直合并现象&quot;&gt;&lt;/a&gt;margin的垂直合并现象&lt;/h1&gt;
     
     </summary>
     
@@ -327,7 +353,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;背景相关属性&quot;&gt;&lt;a href=&quot;#背景相关属性&quot; class=&quot;headerlink&quot; title=&quot;背景相关属性&quot;&gt;&lt;/a&gt;背景相关属性&lt;/h1&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;背景相关属性&quot;&gt;&lt;a href=&quot;#背景相关属性&quot; class=&quot;headerlink&quot; title=&quot;背景相关属性&quot;&gt;&lt;/a&gt;背景相关属性&lt;/h1&gt;
     
     </summary>
     
@@ -347,7 +373,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;侧边栏显示-隐藏&quot;&gt;&lt;a href=&quot;#侧边栏显示-隐藏&quot; class=&quot;headerlink&quot; title=&quot;侧边栏显示/隐藏&quot;&gt;&lt;/a&gt;侧边栏显示/隐藏&lt;/h1&gt;&lt;p&gt;侧边栏显/隐：&lt;code&gt;Ctrl+B&lt;/code&gt;&lt;/p&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;侧边栏显示-隐藏&quot;&gt;&lt;a href=&quot;#侧边栏显示-隐藏&quot; class=&quot;headerlink&quot; title=&quot;侧边栏显示/隐藏&quot;&gt;&lt;/a&gt;侧边栏显示/隐藏&lt;/h1&gt;&lt;p&gt;侧边栏显/隐：&lt;code&gt;Ctrl+B&lt;/code&gt;&lt;/p&gt;
     
     </summary>
     
@@ -367,7 +393,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;CSS三种位置书写方式&quot;&gt;&lt;a href=&quot;#CSS三种位置书写方式&quot; class=&quot;headerlink&quot; title=&quot;CSS三种位置书写方式&quot;&gt;&lt;/a&gt;CSS三种位置书写方式&lt;/h1&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;CSS三种位置书写方式&quot;&gt;&lt;a href=&quot;#CSS三种位置书写方式&quot; class=&quot;headerlink&quot; title=&quot;CSS三种位置书写方式&quot;&gt;&lt;/a&gt;CSS三种位置书写方式&lt;/h1&gt;
     
     </summary>
     
@@ -387,7 +413,7 @@
     
     <summary type="html">
     
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;认识CSS&quot;&gt;&lt;a href=&quot;#认识CSS&quot; class=&quot;headerlink&quot; title=&quot;认识CSS&quot;&gt;&lt;/a&gt;认识CSS&lt;/h1&gt;
+      &lt;!-- build time:Mon Jun 17 2019 09:39:16 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;认识CSS&quot;&gt;&lt;a href=&quot;#认识CSS&quot; class=&quot;headerlink&quot; title=&quot;认识CSS&quot;&gt;&lt;/a&gt;认识CSS&lt;/h1&gt;
     
     </summary>
     
@@ -395,26 +421,6 @@
     
     
       <category term="css" scheme="http://yoursite.com/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Html基础学习03</title>
-    <link href="http://yoursite.com/2018/05/21/Html%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A003/"/>
-    <id>http://yoursite.com/2018/05/21/Html基础学习03/</id>
-    <published>2018-05-21T08:34:28.000Z</published>
-    <updated>2019-04-27T15:13:32.350Z</updated>
-    
-    <summary type="html">
-    
-      &lt;!-- build time:Sat Jun 15 2019 10:34:47 GMT+0800 (中国标准时间) --&gt;&lt;h1 id=&quot;表单系列标签&quot;&gt;&lt;a href=&quot;#表单系列标签&quot; class=&quot;headerlink&quot; title=&quot;表单系列标签&quot;&gt;&lt;/a&gt;表单系列标签&lt;/h1&gt;&lt;h2 id=&quot;input标签&quot;&gt;&lt;a href=&quot;#input标签&quot; class=&quot;headerlink&quot; title=&quot;input标签&quot;&gt;&lt;/a&gt;input标签&lt;/h2&gt;&lt;p&gt;作用：收集用户数据，一般用于登录或注册页&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="HTML" scheme="http://yoursite.com/categories/HTML/"/>
-    
-    
-      <category term="html" scheme="http://yoursite.com/tags/html/"/>
     
   </entry>
   
